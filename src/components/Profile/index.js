@@ -22,11 +22,11 @@ const Profile = () => {
 
   return (
     <Container>
-      <LinkTo>
+      <Redirect to="/about">
         <Avatar />
         <Author>{title}</Author>
         <Position>{position}</Position>
-      </LinkTo>
+      </Redirect>
       <Description>{description}</Description>
     </Container>
   )

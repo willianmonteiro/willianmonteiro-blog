@@ -7,7 +7,7 @@ export const Container = styled.section`
   flex-direction: column;
 `
 
-export const LinkTo = styled(Link)`
+export const Redirect = styled(Link)`
   color: #8899a6;
   text-decoration: none;
   transition: color 0.5s;
@@ -19,8 +19,8 @@ export const LinkTo = styled(Link)`
 
 export const Author = styled.h1`
   font-size: 1.6rem;
-  margin: 0.5rem auto 1.5rem;
 `
+
 export const Position = styled.small`
   display: block;
   font-size: 1.2rem;
