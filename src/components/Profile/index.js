@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { Container, LinkTo, Author, Position, Description } from "./styles"
+import { Container, Redirect, Author, Position, Description } from "./styles"
 import Avatar from "../Avatar"
 
 const Profile = () => {
