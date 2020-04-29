@@ -2,7 +2,7 @@ import React from "react"
 import Profile from "../Profile"
 import SocialLinks from "../SocialLinks"
 
-import { Container } from "./styles"
+import { Container } from "./styled"
 
 const Sidebar = () => (
   <Container>

@@ -8,7 +8,7 @@ import {
   SocialItem,
   SocialLink,
   IconWrapper,
-} from "./styles"
+} from "./styled"
 
 const SocialLinks = () => (
   <Container>

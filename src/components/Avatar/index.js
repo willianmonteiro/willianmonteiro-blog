@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import { AvatarWrapper } from "./styles"
+import { AvatarWrapper } from "./styled"
 
 const Avatar = () => {
   const { avatarImage } = useStaticQuery(

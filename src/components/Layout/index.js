@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import Sidebar from "../Sidebar"
 
 import GlobalStyles from "../../styles/global"
-import { LayoutWrapper, Main } from "./styles"
+import { LayoutWrapper, Main } from "./styled"
 
 const Layout = ({ children }) => {
   return (
