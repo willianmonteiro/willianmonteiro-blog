@@ -1,11 +1,11 @@
 const links = [
   {
-    label: "Github",
-    url: "https://github.com/willianmonteiro",
+    label: 'Github',
+    url: 'https://github.com/willianmonteiro',
   },
   {
-    label: "Instagram",
-    url: "https://instagram.com/willianmntro",
+    label: 'Instagram',
+    url: 'https://instagram.com/willianmntro',
   },
 ]
 

@@ -1,6 +1,6 @@
-import React from "react"
-import Icons from "./icons"
-import links from "./content"
+import React from 'react'
+import Icons from './icons'
+import links from './content'
 
 import {
   Container,
@@ -8,7 +8,7 @@ import {
   SocialItem,
   SocialLink,
   IconWrapper,
-} from "./styled"
+} from './styled'
 
 const SocialLinks = () => (
   <Container>
@@ -20,8 +20,8 @@ const SocialLinks = () => (
             <SocialLink
               href={link.url}
               title={link.label}
-              target="_blank"
-              rel="noopener noreffer"
+              target='_blank'
+              rel='noopener noreffer'
             >
               <IconWrapper>
                 <Icon />

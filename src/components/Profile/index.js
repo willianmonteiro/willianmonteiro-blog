@@ -1,7 +1,7 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import { Container, Redirect, Author, Position, Description } from "./styled"
-import Avatar from "../Avatar"
+import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
+import { Container, Redirect, Author, Position, Description } from './styled'
+import Avatar from '../Avatar'
 
 const Profile = () => {
   const {
@@ -22,7 +22,7 @@ const Profile = () => {
 
   return (
     <Container>
-      <Redirect to="/about">
+      <Redirect to='/about'>
         <Avatar />
         <Author>{title}</Author>
         <Position>{position}</Position>
