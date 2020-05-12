@@ -22,7 +22,7 @@ export const Container = styled.section`
 
 export const PostItemThumb = styled.div`
   align-items: center;
-  background: ${props => props.background || '#1f1f2'};
+  background: ${props => props.background || '#1fa1f2'};
   border-radius: 50%;
   color: #fff;
   display: flex;
