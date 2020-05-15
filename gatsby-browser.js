@@ -1,1 +1,2 @@
-import "lazysizes"
+import 'lazysizes'
+require('prismjs/themes/prism-okaidia.css')

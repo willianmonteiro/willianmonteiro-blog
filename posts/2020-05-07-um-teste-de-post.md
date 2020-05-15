@@ -28,8 +28,11 @@ Proin suscipit luctus orci placerat fringilla. Donec hendrerit laoreet risus ege
 
 
 ```javascript
-a=3
-const teste = (a) => {}
+const handleExample = (e) => {
+  const { value } = e.target;
+  
+  return value;
+}
 ```
 
 #### Proin suscipit luctus
