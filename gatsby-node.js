@@ -26,7 +26,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
-  const blogPostTemplate = path.resolve(`src/templates/blog-post.js`)
   
   return graphql(`
     {
@@ -45,18 +44,36 @@ exports.createPages = ({ graphql, actions }) => {
             }
             timeToRead
           }
+          next {
+            frontmatter {
+              title
+            }
+            fields {
+              slug
+            }
+          }
+          previous {
+            fields {
+              slug
+            }
+            frontmatter {
+              title
+            }
+          }
         }
       }
     }
   `).then(result => {
     const posts = result.data.allMarkdownRemark.edges;
     
-    posts.forEach(({ node }) => {
+    posts.forEach(({ node, next, previous }) => {
       createPage({
         path: `${node.fields.slug}`,
         component: path.resolve('./src/templates/single-post.js'),
         context : {
-          slug: node.fields.slug
+          slug: node.fields.slug,
+          nextPost: next,
+          previousPost: previous
         }
       })
     })

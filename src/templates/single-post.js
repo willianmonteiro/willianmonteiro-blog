@@ -2,12 +2,15 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import SEO from '../components/seo'
 import Layout from '../components/Layout'
+import RecommendedPosts from '../components/RecommendedPosts'
+import Comments from "../components/Comments"
 
 import { PostHeader, PostTitle, PostDescription, PostDate, MainContent } from '../components/Post/styled'
 
-const SinglePost = ({ data }) => {
+const SinglePost = ({ data, pageContext }) => {
   const post = data.markdownRemark
-  
+  const nextPost = pageContext.nextPost
+  const previousPost = pageContext.previousPost
   
   return (
     <Layout>
@@ -22,6 +25,9 @@ const SinglePost = ({ data }) => {
       <MainContent>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </MainContent>
+      
+      <RecommendedPosts next={nextPost} previous={previousPost} />
+      <Comments url={post.fields.slug} title={post.frontmatter.title} />
     </Layout>
   )
 }
@@ -29,6 +35,9 @@ const SinglePost = ({ data }) => {
 export const query = graphql`
   query SinglePost($slug: String!) {
     markdownRemark(fields: {slug: {eq: $slug}}) {
+      fields {
+        slug 
+      }
       frontmatter { 
         title,
         description,
