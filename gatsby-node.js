@@ -26,21 +26,21 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
-  
+
   return graphql(`
     {
-      allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
+      allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
         edges {
           node {
             fields {
               slug
             }
             frontmatter {
+              background
               category
+              date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
               description
               title
-              date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
-              background
             }
             timeToRead
           }
@@ -64,11 +64,11 @@ exports.createPages = ({ graphql, actions }) => {
       }
     }
   `).then(result => {
-    const posts = result.data.allMarkdownRemark.edges;
+    const posts = result.data.allMarkdownRemark.edges
     
     posts.forEach(({ node, next, previous }) => {
       createPage({
-        path: `${node.fields.slug}`,
+        path: node.fields.slug,
         component: path.resolve('./src/templates/single-post.js'),
         context : {
           slug: node.fields.slug,
@@ -77,6 +77,8 @@ exports.createPages = ({ graphql, actions }) => {
         }
       })
     })
+    
+    
     
     const postsPerPage = 5;
     const numPages = Math.ceil(posts.length / postsPerPage);

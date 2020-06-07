@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import SEO from '../components/seo'
 import Layout from '../components/Layout'
 import RecommendedPosts from '../components/RecommendedPosts'
-import Comments from "../components/Comments"
+import Comments from '../components/Comments'
 
 import { PostHeader, PostTitle, PostDescription, PostDate, MainContent } from '../components/Post/styled'
 
@@ -36,7 +36,7 @@ export const query = graphql`
   query SinglePost($slug: String!) {
     markdownRemark(fields: {slug: {eq: $slug}}) {
       fields {
-        slug 
+        slug
       }
       frontmatter { 
         title,
