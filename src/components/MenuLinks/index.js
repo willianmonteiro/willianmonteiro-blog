@@ -1,6 +1,5 @@
 import React from 'react'
 import links from './content.js'
-
 import { Container, MenuList, MenuItem, MenuLink } from './styled';
 
 const MenuLinks = () => (
@@ -8,7 +7,14 @@ const MenuLinks = () => (
     <MenuList>
       {links.map((link, i) => (
         <MenuItem key={i}>
-          <MenuLink to={link.url} activeClassName='active'>
+          <MenuLink 
+            cover 
+            direction='left' 
+            bg='var(--background)' 
+            duration={0.6} 
+            to={link.url} 
+            activeClassName='active'
+          >
             {link.label}
           </MenuLink>
         </MenuItem>

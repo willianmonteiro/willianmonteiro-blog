@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
-import { Link } from "gatsby"
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
+
 
 export const Container = styled.section`
   color: var(--texts);
@@ -8,7 +9,7 @@ export const Container = styled.section`
   flex-direction: column;
 `
 
-export const Redirect = styled(Link)`
+export const Redirect = styled(AniLink)`
   color: var(--texts);
   text-decoration: none;
   transition: color 0.5s;
