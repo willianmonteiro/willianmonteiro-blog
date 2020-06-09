@@ -81,7 +81,7 @@ html, body, div, span, applet, object, iframe,
     --borders: #dedede;
     --postColor: #111;
     --texts: #555555;
-    --highlight: var(--highlight);
+    --highlight: #1fa1f2;
     --mediumBackground: #f0f0f3;
     --background: #fff;
     --white: #fff;
