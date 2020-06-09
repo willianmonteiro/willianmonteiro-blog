@@ -7,11 +7,13 @@ module.exports = {
     position: `Desenvolvedor frontend`,
     description: `Gatsby project`,
     author: `@willianmonteiro`,
+    siteUrl: `https://willianmonteiro.com.br`
   },
   plugins: [
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`
     {
       resolve: `gatsby-source-filesystem`,
       options: {

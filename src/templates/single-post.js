@@ -14,7 +14,11 @@ const SinglePost = ({ data, pageContext }) => {
   
   return (
     <Layout>
-      <SEO title={post.frontmatter.title}/>
+      <SEO 
+        title={post.frontmatter.title}
+        description={post.frontmatter.description}
+        image={post.frontmatter.image}
+      />
       
       <PostHeader>
         <PostDate>{post.frontmatter.date} - {post.timeToRead}min de leitura</PostDate>
@@ -38,10 +42,11 @@ export const query = graphql`
       fields {
         slug
       }
-      frontmatter { 
+      frontmatter {
         title,
         description,
         date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
+        image
       }
       html
       timeToRead

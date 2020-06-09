@@ -4,6 +4,7 @@ title: Um teste de Post em markdown
 description: Lorem ipsum sit amet dolor
 category: react
 background: '#037069'
+image: '/assets/images/lorem-image.png'
 ---
 
 # Lorem ipsum
