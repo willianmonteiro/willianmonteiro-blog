@@ -64,7 +64,7 @@ module.exports = {
       options: {
         appId: process.env.GATSBY_ALGOLIA_APP_ID,
         apiKey: process.env.ALGOLIA_ADMIN_KEY,
-        indexName: 'Posts',
+        indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME,
         queries,
         chunkSize: 10000,
         enablePartialUpdates: true,
