@@ -7,7 +7,7 @@ module.exports = {
     position: `Desenvolvedor frontend`,
     description: `Gatsby project`,
     author: `@willianmonteiro`,
-    siteUrl: `https://willianmonteiro.com.br`
+    siteUrl: `https://willianmonteiro.netlify.app/`
   },
   plugins: [
     `gatsby-plugin-transition-link`,
@@ -84,5 +84,6 @@ module.exports = {
     },
     // enables Progressive Web App + Offline functionality
     `gatsby-plugin-offline`,
+    `gatsby-plugin-netlify-cms`,
   ],
 }
