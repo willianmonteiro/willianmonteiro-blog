@@ -79,7 +79,7 @@ module.exports = {
         background_color: `#282A36`,
         theme_color: `#282A36`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`,
+        icon: `/src/images/willian-icon.jpg`,
       },
     },
     // enables Progressive Web App + Offline functionality
