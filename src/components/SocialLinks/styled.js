@@ -1,8 +1,13 @@
-import styled from "styled-components"
+import styled from 'styled-components'
+import media from 'styled-media-query'
 
 export const Container = styled.nav`
   margin: 2rem auto;
   width: 100%;
+  
+  ${media.lessThan('large')`
+    display: none
+  `}
 `
 
 export const SocialList = styled.ul`
@@ -15,12 +20,12 @@ export const SocialList = styled.ul`
 export const SocialItem = styled.li``
 
 export const SocialLink = styled.a`
-  color: #8899a6;
+  color: var(--texts);
   text-decoration: none;
   transition: color 0.5s;
 
   &:hover {
-    color: #1fa1f2;
+    color: var(--highlight);
   }
 `
 export const IconWrapper = styled.div`

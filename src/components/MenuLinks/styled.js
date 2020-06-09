@@ -1,7 +1,13 @@
 import styled from 'styled-components';
+import media from 'styled-media-query'
 import { Link } from 'gatsby';
 
-export const Container = styled.nav``
+export const Container = styled.nav`
+  ${media.lessThan('large')`
+    display: none;
+  `}
+`
+
 export const MenuList = styled.ul`
   font-size: 1.2rem;
   font-weight: 300;
@@ -15,12 +21,12 @@ export const MenuItem = styled.li`
   }
 `
 export const MenuLink = styled(Link)`
-  color: #8899a6;
+  color: var(--texts);
   text-decoration: none;
   transition: color 0.5s;
   
   &:hover {
-    color: #1fa1f2;
+    color: var(--highlight);
   }
 `
 

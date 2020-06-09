@@ -24,8 +24,10 @@ const Profile = () => {
     <Container>
       <Redirect to='/about'>
         <Avatar />
-        <Author>{title}</Author>
-        <Position>{position}</Position>
+        <div>
+          <Author>{title}</Author>
+          <Position>{position}</Position>
+        </div>
       </Redirect>
       <Description>{description}</Description>
     </Container>

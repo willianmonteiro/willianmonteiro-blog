@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 import SEO from '../components/seo'
 import PostItem from '../components/PostItem'
 import Pagination from '../components/Pagination'
+import { ListWrapper } from "../components/ListWrapper/styled"
 
 const ArchivePost = props => {
   const postList = props.data.allMarkdownRemark.edges
@@ -20,23 +21,25 @@ const ArchivePost = props => {
     <Layout>
       <SEO title="Home"/>
 
-      {postList.map(({
-         node: {
-           frontmatter: { background, category, date, description, title },
-           timeToRead,
-           fields: { slug }
-         },
-       }) => (
-        <PostItem
-          slug={slug}
-          background={background}
-          category={category}
-          date={date}
-          timeToRead={timeToRead}
-          title={title}
-          description={description}
-        />
-      ))}
+      <ListWrapper>
+        {postList.map(({
+           node: {
+             frontmatter: { background, category, date, description, title },
+             timeToRead,
+             fields: { slug }
+           },
+         }) => (
+          <PostItem
+            slug={slug}
+            background={background}
+            category={category}
+            date={date}
+            timeToRead={timeToRead}
+            title={title}
+            description={description}
+          />
+        ))}
+      </ListWrapper>
 
       <Pagination 
         isFirst={isFirst} 
