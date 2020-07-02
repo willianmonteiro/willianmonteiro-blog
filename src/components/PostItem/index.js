@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Img from 'gatsby-image'
 
 import { 
   PostItemLink, 
@@ -19,8 +20,8 @@ const PostItem = ({slug, background, featuredImage, category, date, timeToRead, 
     <PostItemLink to={slug}>
       <Container>
         {/* <PostItemThumb fluid={featuredImage} alt={title} /> */}
-        {/* <img src={featuredImage} width='800' /> */}
-        <PostItemThumb background={background}>{category}</PostItemThumb>
+        <img src={featuredImage} />
+        {/* <PostItemThumb background={background}>{category}</PostItemThumb> */}
         <PostItemInfo>
           <PostItemDate>{date} • {timeToRead} min de leitura</PostItemDate>
           <PostItemTitle>{title}</PostItemTitle>
