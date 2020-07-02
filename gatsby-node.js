@@ -37,7 +37,7 @@ exports.createPages = ({ graphql, actions }) => {
             }
             frontmatter {
               background
-              image
+              featuredImage
               category
               date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
               description

@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
+import Img from 'gatsby-image'
 import { Link } from 'gatsby';
 
 
@@ -18,7 +19,7 @@ export const PostItemLink = styled(Link)`
 `;
 
 export const Container = styled.section`
-  align-items: center;
+  align-items: flex-start;
   border-bottom: 1px solid var(--borders);
   display: flex;
   padding: 2rem 3rem;
@@ -38,6 +39,10 @@ export const Container = styled.section`
   `}
 `;
 
+// export const PostItemThumb = styled(Img)`
+//   width: 100%;
+// `
+
 export const PostItemThumb = styled.div`
   align-items: center;
   background: ${props => props.background || 'var(--highlight)'};
@@ -47,11 +52,16 @@ export const PostItemThumb = styled.div`
   font-size: 1.3rem;
   font-weight: 700;
   justify-content: center;
-  min-height: 90px;
   min-width: 90px;
+  min-height: 90px;
+  margin-right: 20px;
   text-transform: uppercase;
   
    body#grid & {
+    min-width: 100%;
+    border-radius: 0;
+    min-height: 180px;
+    margin-right: 0;
     margin-bottom: 1.5rem;
   }
   
@@ -68,7 +78,8 @@ export const PostItemThumb = styled.div`
 export const PostItemInfo = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: 1.5rem;
+  justify-content: flex-start;
+  //margin-left: 1.5rem;
   
   body#grid & {
     line-height: 1.1;
@@ -82,15 +93,16 @@ export const PostItemInfo = styled.div`
 
 export const PostItemDate = styled.div`
   font-size: 0.9rem;
+  opacity: .7
 `;
 export const PostItemTitle = styled.h1`
-  font-size: 1.6rem;
-  font-weight: 700;
+  font-size: 1.4rem;
+  font-weight: 500;
   margin: 0.2rem 0 0.5rem;
 `;
 
 export const PostItemDescription = styled.p`
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 300;
   line-height: 1.2;
 `;

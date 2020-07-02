@@ -11,19 +11,25 @@ import {
   PostItemDescription 
 } from './styled'
 
-const PostItem = ({slug, background, category, date, timeToRead, title, description }) => (
-  <PostItemLink to={slug}>
-    <Container>
-      <PostItemThumb background={background}>{category}</PostItemThumb>
-      <PostItemInfo>
-        <PostItemDate>{date} • {timeToRead} min de leitura</PostItemDate>
-        <PostItemTitle>{title}</PostItemTitle>
-        <PostItemDescription>{description}</PostItemDescription>
-      </PostItemInfo>
-    </Container>
-  </PostItemLink>
-);
+const PostItem = ({slug, background, featuredImage, category, date, timeToRead, title, description }) => {
+  console.log(featuredImage);
+  // let featuredImgFluid = image.childImageSharp.fluid
 
+  return (
+    <PostItemLink to={slug}>
+      <Container>
+        {/* <PostItemThumb fluid={featuredImage} alt={title} /> */}
+        {/* <img src={featuredImage} width='800' /> */}
+        <PostItemThumb background={background}>{category}</PostItemThumb>
+        <PostItemInfo>
+          <PostItemDate>{date} • {timeToRead} min de leitura</PostItemDate>
+          <PostItemTitle>{title}</PostItemTitle>
+          <PostItemDescription>{description}</PostItemDescription>
+        </PostItemInfo>
+      </Container>
+    </PostItemLink>
+  );
+}
 PostItem.propTypes = {
   slug: PropTypes.string.isRequired,
   background: PropTypes.string,

@@ -11,6 +11,8 @@ const SinglePost = ({ data, pageContext }) => {
   const post = data.markdownRemark
   const nextPost = pageContext.nextPost
   const previousPost = pageContext.previousPost
+
+  console.log('data', data);
   
   return (
     <Layout>
@@ -46,7 +48,7 @@ export const query = graphql`
         title,
         description,
         date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
-        image
+        featuredImage
       }
       html
       timeToRead

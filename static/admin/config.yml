@@ -5,8 +5,8 @@ backend:
   site_domain: https://willianmonteiro.netlify.app
 
 publish_mode: editorial_workflow
-media_folder: 'static/assets/img'
-public_folder: 'assets/img'
+media_folder: 'static/assets/images'
+public_folder: 'assets/images'
 
 
 collections:
@@ -24,7 +24,7 @@ collections:
         widget: 'datetime',
         format: 'YYYY-MM-DD hh:mm:ss',
       }
-      - { label: 'Imagem', name: 'thumbnail', widget: 'image' }
+      - { label: 'Imagem', name: 'featuredImage', widget: 'image' }
       - {
           label: 'Categoria', 
           name: 'category', 

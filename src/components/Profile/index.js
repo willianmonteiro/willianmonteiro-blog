@@ -1,12 +1,12 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import { Container, Redirect, Author, Position, Description } from './styled'
+import { Container, Redirect, Author, ProfileInfo, Description } from './styled'
 import Avatar from '../Avatar'
 
 const Profile = () => {
   const {
     site: {
-      siteMetadata: { title, position, description },
+      siteMetadata: { title, description },
     },
   } = useStaticQuery(graphql`
     query My {
@@ -22,14 +22,14 @@ const Profile = () => {
 
   return (
     <Container>
-      <Redirect to='/about'>
-        <Avatar />
-        <div>
-          <Author>{title}</Author>
-          <Position>{position}</Position>
-        </div>
-      </Redirect>
-      <Description>{description}</Description>
+      <Author to='/'>{title}</Author>
+      <ProfileInfo>
+        <Redirect to='/about'>
+          <Avatar />
+        </Redirect>
+        <Description>{description}</Description>
+      </ProfileInfo>
+      
     </Container>
   )
 }

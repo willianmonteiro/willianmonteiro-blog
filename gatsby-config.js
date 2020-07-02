@@ -5,7 +5,7 @@ module.exports = {
   siteMetadata: {
     title: `Willian Monteiro`,
     position: `Desenvolvedor frontend`,
-    description: `Gatsby project`,
+    description: `Software Engineer & Desenvolvedor Front-end. Crio experiências digitais que unem estratégia, design e tecnologia.`,
     author: `@willianmonteiro`,
     siteUrl: `https://willianmonteiro.netlify.app/`
   },

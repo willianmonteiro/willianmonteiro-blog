@@ -4,7 +4,7 @@ import media from 'styled-media-query'
 export const Main = styled.section`
   background: var(--background);
   min-height: 100vh;
-  padding: 0 3.75rem 0 20rem;
+  padding: 0 6rem;
   transition: background, color 0.5s;
   width: 100%;
   
@@ -20,7 +20,7 @@ export const Main = styled.section`
 `
 
 export const LayoutWrapper = styled.section`
-  display: flex;
+  //display: flex;
   
   ${media.lessThan('large')`
     flex-direction: column;  
