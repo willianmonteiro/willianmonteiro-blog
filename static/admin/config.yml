@@ -2,8 +2,8 @@ backend:
   name: github
   repo: willianmonteiro/pwa-react-graphQL
   branch: master
-  site_domain: https://willianmonteiro.netlify.app
-
+  site_domain: http://willianmonteiro.netlify.app
+  
 publish_mode: editorial_workflow
 media_folder: 'static/assets/images'
 public_folder: 'assets/images'
