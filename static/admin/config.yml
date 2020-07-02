@@ -29,6 +29,6 @@ collections:
           label: 'Categoria', 
           name: 'category', 
           widget: 'select',
-          options: ['javascript', 'react']
+          options: ['javascript', 'react'],
       }
       - { label: 'Body', name: 'body', widget: 'markdown' }
