@@ -7,6 +7,11 @@ export const Container = styled.section`
   color: var(--texts);
   display: flex;
   flex-direction: column;
+
+  ${media.lessThan('medium')`
+    padding: 0;
+    align-items: center;
+  `}
 `
 
 export const ProfileInfo = styled.div`
@@ -27,6 +32,12 @@ export const Redirect = styled(AniLink)`
   &:hover {
     color: var(--highlight);
   }
+
+
+  ${media.lessThan('large')`
+    border: 0;
+    margin-left: 15px;
+  `}
 `
 
 export const Author = styled(AniLink)`
@@ -49,7 +60,5 @@ export const Description = styled.p`
   max-width: 500px;
   opacity: .7;
   
-  ${media.lessThan('large')`
-    display: none;
-  `}
+  
 `
