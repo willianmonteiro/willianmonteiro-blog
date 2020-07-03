@@ -7,8 +7,6 @@ import { Sun } from '@styled-icons/heroicons-outline/Sun'
 import { ThList as List } from '@styled-icons/typicons/ThList'
 import { GridAlt as Grid } from '@styled-icons/boxicons-solid/GridAlt'
 import { SearchAlt2 as Search } from '@styled-icons/boxicons-regular/SearchAlt2'
-// import { Home } from '@styled-icons/boxicons-solid/Home'
-// import { MenuBarLink } from "../MenuBar/styled"
 
 const NavMenu = () => {
   const [theme, setTheme] = useState(null)
@@ -16,6 +14,7 @@ const NavMenu = () => {
 
   const isDarkMode = theme === 'dark'
   const isListMode = display === 'list'
+  const path = window.location.pathname
 
   useEffect(() => {
     setTheme(window.__theme)
@@ -45,17 +44,18 @@ const NavMenu = () => {
             {isDarkMode ? <Sun /> : <Moon/>}
           </NavMenuItem>
           
-          <NavMenuItem
-            title='Mudar visualização'
-            onClick={() => {
-              window.__setPreferredDisplay(isListMode ? 'grid' : 'list')
-            }}
-            className={display}
-          >
-            {isListMode ? <Grid /> : <List/>}
-          </NavMenuItem>
+          {(path === '/' || path.includes('/page/')) && (
+              <NavMenuItem
+              title='Mudar visualização'
+              onClick={() => {
+                window.__setPreferredDisplay(isListMode ? 'grid' : 'list')
+              }}
+              className={display}
+            >
+              {isListMode ? <Grid /> : <List/>}
+            </NavMenuItem>
+          )}
         </NavMenuGroup>
-        
       </Container>
     )
 }

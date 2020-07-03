@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 // import { TransitionPortal } from 'gatsby-plugin-transition-link'
 
 import Header from '../Header'
-// import Sidebar from '../Sidebar'
 // import MenuBar from '../MenuBar'
 
 import GlobalStyles from '../../styles/global'
