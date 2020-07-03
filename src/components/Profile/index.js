@@ -12,7 +12,6 @@ const Profile = () => {
     query My {
       site {
         siteMetadata {
-          position
           description
           title
         }
