@@ -44,7 +44,7 @@ const NavMenu = () => {
             {isDarkMode ? <Sun /> : <Moon/>}
           </NavMenuItem>
           
-          {(path && path === '/' || path.includes('/page/')) && (
+          {(path && (path === '/' || path === '/search' || path.includes('/page/'))) && (
               <NavMenuItem
               title='Mudar visualização'
               onClick={() => {
