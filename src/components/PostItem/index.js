@@ -20,7 +20,7 @@ const PostItem = ({slug, background, featuredImage, category, date, timeToRead, 
     <PostItemLink to={slug}>
       <Container>
         {/* <PostItemThumb fluid={featuredImage} alt={title} /> */}
-        <img src={featuredImage} />
+        <img src={`/${featuredImage}`} />
         {/* <PostItemThumb background={background}>{category}</PostItemThumb> */}
         <PostItemInfo>
           <PostItemDate>{date} • {timeToRead} min de leitura</PostItemDate>

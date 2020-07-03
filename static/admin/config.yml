@@ -5,8 +5,8 @@ backend:
   site_domain: willianmonteiro.netlify.app
   
 publish_mode: editorial_workflow
-media_folder: '/static/assets/images'
-public_folder: '/static/assets/images'
+media_folder: 'static/assets/images'
+public_folder: 'static/assets/images'
 
 
 collections:
