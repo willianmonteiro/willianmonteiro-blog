@@ -37,6 +37,7 @@ export const PostThumbnail = styled.img`
     max-height: 100px;
     object-fit: cover;
     margin-right: 20px;
+    border-radius: 8px;
 
     body#grid & {
       max-width: 100%;
