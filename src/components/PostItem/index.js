@@ -32,6 +32,7 @@ const PostItem = ({slug, background, featuredImage, category, date, timeToRead, 
 PostItem.propTypes = {
   slug: PropTypes.string.isRequired,
   background: PropTypes.string,
+  featuredImage: PropTypes.string,
   category: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   timeToRead: PropTypes.string.isRequired,
