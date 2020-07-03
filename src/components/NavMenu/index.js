@@ -14,7 +14,7 @@ const NavMenu = () => {
 
   const isDarkMode = theme === 'dark'
   const isListMode = display === 'list'
-  const path = typeof window !== 'undefined' && window && window.location ? window.location.pathname : null
+  const path = typeof window !== 'undefined' && window && window.location ? window.location.pathname : ''
 
   useEffect(() => {
     setTheme(window.__theme)
