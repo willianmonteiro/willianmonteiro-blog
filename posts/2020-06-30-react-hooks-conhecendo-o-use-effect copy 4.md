@@ -4,7 +4,7 @@ title: React Hooks | UseEffect
 description: Lidando com efeitos colaterais na sua aplicação
 category: react
 background: '#037069'
-featuredImage: '/assets/images/lorem-image.png'
+featuredImage: 'assets/images/lorem-image.png'
 ---
     -- JavaScript Starter
         -- Variáveis
