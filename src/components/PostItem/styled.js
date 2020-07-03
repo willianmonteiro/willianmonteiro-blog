@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
-import Img from 'gatsby-image'
 import { Link } from 'gatsby';
 
 
@@ -22,6 +21,7 @@ export const Container = styled.section`
   align-items: flex-start;
   border-bottom: 1px solid var(--borders);
   display: flex;
+  flex-direction: row;
   padding: 2rem 3rem;
   width: 100%;
   
@@ -29,57 +29,45 @@ export const Container = styled.section`
     border: none;
     padding: 2rem 1rem;
     flex-direction: column;
-    justify-content: center;
   }
-  
-  ${media.lessThan('large')`
-    align-items: flex-start;
-    flex-direction: column;
-    padding: 2rem 1rem;
-  `}
 `;
 
-// export const PostItemThumb = styled(Img)`
-//   width: 100%;
-// `
+export const PostThumbnail = styled.img`
+    max-width: 200px;
+    max-height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
 
-export const PostItemThumb = styled.div`
-  align-items: center;
+    body#grid & {
+      max-width: 100%;
+      max-height: 300px;
+      min-height: 300px;
+    }
+`
+
+export const PostItemTag = styled.div`
   background: ${props => props.background || 'var(--highlight)'};
-  border-radius: 50%;
-  color: #fff;
+  width: fit-content;
+  border-radius: 4px;
+  padding: 2px 4px;
+  margin-bottom: 10px;
+
   display: flex;
-  font-size: 1.3rem;
-  font-weight: 700;
   justify-content: center;
-  min-width: 90px;
-  min-height: 90px;
-  margin-right: 20px;
+  align-items: center;
+
+  color: #fff;
+  font-size: .6rem;
+  font-weight: 600;
   text-transform: uppercase;
-  
-   body#grid & {
-    min-width: 100%;
-    border-radius: 0;
-    min-height: 180px;
-    margin-right: 0;
-    margin-bottom: 1.5rem;
-  }
-  
-  ${media.lessThan('large')`
-    border-radius: 0;
-    font-size: 1rem;
-    min-height: auto;
-    min-width: auto;
-    padding: .2rem .5rem;
-    margin-bottom: .7rem;
-  `}
+
+
 `;
 
 export const PostItemInfo = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  //margin-left: 1.5rem;
   
   body#grid & {
     line-height: 1.1;

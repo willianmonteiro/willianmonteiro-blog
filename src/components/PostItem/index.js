@@ -5,7 +5,8 @@ import Img from 'gatsby-image'
 import { 
   PostItemLink, 
   Container, 
-  PostItemThumb, 
+  PostThumbnail, 
+  PostItemTag,
   PostItemInfo, 
   PostItemDate, 
   PostItemTitle, 
@@ -13,16 +14,13 @@ import {
 } from './styled'
 
 const PostItem = ({slug, background, featuredImage, category, date, timeToRead, title, description }) => {
-  console.log(featuredImage);
-  // let featuredImgFluid = image.childImageSharp.fluid
 
   return (
     <PostItemLink to={slug}>
       <Container>
-        {/* <PostItemThumb fluid={featuredImage} alt={title} /> */}
-        <img src={`/${featuredImage}`} />
-        {/* <PostItemThumb background={background}>{category}</PostItemThumb> */}
+        <PostThumbnail src={`/${featuredImage}`} />
         <PostItemInfo>
+          <PostItemTag background={background}>{category}</PostItemTag>
           <PostItemDate>{date} • {timeToRead} min de leitura</PostItemDate>
           <PostItemTitle>{title}</PostItemTitle>
           <PostItemDescription>{description}</PostItemDescription>
