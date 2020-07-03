@@ -29,6 +29,19 @@ collections:
           label: 'Categoria', 
           name: 'category', 
           widget: 'select',
-          options: ['javascript', 'react'],
+          options: ['javascript', 'react', 'node', 'css', 'carreira', 'dev'],
+      }
+      - {
+        label: 'Background',
+        name: 'background',
+        widget: 'select',
+        options: [
+          { label: 'javascript', value: "#F0DB4F" },
+          { label: 'react', value: "#61DBFB" },
+          { label: 'node', value: "#3C873A" },
+          { label: 'css', value: "#2965f1" },
+          { label: 'carreira', value: "#8e44ad" },
+          { label: 'dev', value: "#2c3e50" },
+        ]
       }
       - { label: 'Body', name: 'body', widget: 'markdown' }
