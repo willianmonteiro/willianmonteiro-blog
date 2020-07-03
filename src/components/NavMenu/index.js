@@ -11,15 +11,18 @@ import { SearchAlt2 as Search } from '@styled-icons/boxicons-regular/SearchAlt2'
 const NavMenu = () => {
   const [theme, setTheme] = useState(null)
   const [display, setDisplay] = useState(null)
+  const [path, setPath] = useState(null)
 
   const isDarkMode = theme === 'dark'
   const isListMode = display === 'list'
-  const windowGlobal = typeof window !== 'undefined' && window
-  const path = windowGlobal.location.pathname
 
   useEffect(() => {
     setTheme(window.__theme)
     setDisplay(window.__display)
+
+    if(typeof window !== 'undefined' && window && window.location) {
+      setPath(window.location.pathname)
+    }
     
     window.__onThemeChange = () => setTheme(window.__theme)
     window.__onDisplayChange = () => setDisplay(window.__display)
