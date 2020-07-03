@@ -26,6 +26,7 @@ export const PostTitle = styled.h1`
   `}
 `
 
+
 export const PostDescription = styled.h2`
   font-size: 2rem;
   font-weight: 200;
@@ -209,5 +210,16 @@ export const MainContent = styled.section`
     &:hover {
       opacity: 0.8;
     }
+  }
+`
+
+export const PostFeedback = styled.section`
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  p {
+     font-size: 1rem;
+     padding: 0 60px 0 30px;
   }
 `
