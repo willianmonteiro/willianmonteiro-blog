@@ -11,7 +11,7 @@ import { SearchAlt2 as Search } from '@styled-icons/boxicons-regular/SearchAlt2'
 const NavMenu = () => {
   const [theme, setTheme] = useState(null)
   const [display, setDisplay] = useState(null)
-  const [path, setPath] = useState(null)
+  const [path, setPath] = useState('/')
 
   const isDarkMode = theme === 'dark'
   const isListMode = display === 'list'
@@ -48,7 +48,7 @@ const NavMenu = () => {
             {isDarkMode ? <Sun /> : <Moon/>}
           </NavMenuItem>
           
-          {(path === '/' || path.includes('/page/')) && (
+          {(path && path === '/' || path.includes('/page/')) && (
               <NavMenuItem
               title='Mudar visualização'
               onClick={() => {
