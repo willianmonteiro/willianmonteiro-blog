@@ -44,6 +44,12 @@ export const PostThumbnail = styled.img`
       max-height: 300px;
       min-height: 300px;
     }
+
+    ${media.lessThan('medium')`
+      body#list & { 
+        display: none;
+      }
+    `}
 `
 
 export const PostItemTag = styled.div`
