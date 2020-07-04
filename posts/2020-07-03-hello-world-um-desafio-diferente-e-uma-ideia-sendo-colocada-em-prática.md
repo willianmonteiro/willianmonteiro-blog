@@ -31,7 +31,7 @@ Uma frase que tem me ajudado com esses pensamentos é:
 
 Desde que iniciei nesse mundo da tecnologia, tenho estudado sobre centenas de assuntos e criar notas no computador, celular, escrever em cadernos etc. Sempre me ajudou a fixar aprendizados.
 
-Como sempre escrevo sobre o que tenho estudado, porque não fazer isso publicamente e acrescentar de alguma forma no conteúdo que temos sobre a área de tecnologia não é?
+Como sempre escrevo sobre o que tenho estudado, porque não fazer isso publicamente e contribuir de alguma forma com a comunidade de desenvolvimento não é?
 
 Talvez eu não escreva da maneira mais técnica sobre as ultimas *features* da linguagem X nem a MELHOR MANEIRA de resolver Y, mas tentarei compartilhar coisas que funcionaram para mim. 
 
