@@ -29,13 +29,13 @@ Uma frase que tem me ajudado com esses pensamentos é:
 
 ## Ferramenta de Estudo
 
-Desde que iniciei nesse mundo da tecnologia, tenho estudado sobre centenas de assuntos e criar notas no computador, celular, escrever em cadernos etc. Sempre me ajudou a fixar aprendizados.
+Desde que iniciei nesse mundo da tecnologia, tenho estudado sobre centenas de assuntos. Criar notas no computador, celular, escrever em cadernos etc. sempre me ajudou a fixar aprendizados.
 
 Como sempre escrevo sobre o que tenho estudado, porque não fazer isso publicamente e contribuir de alguma forma com a comunidade de desenvolvimento não é?
 
 Talvez eu não escreva da maneira mais técnica sobre as ultimas *features* da linguagem X nem a MELHOR MANEIRA de resolver Y, mas tentarei compartilhar coisas que funcionaram para mim. 
 
-E claro, espero que este blog possa de alguma maneira ajudar alguém assim como tantos blogs de desenvolvedores já me ajudaram durante minha carreira.\
+E claro, espero que com este projeto eu consiga de alguma maneira ajudar alguém assim como tantos blogs de desenvolvedores já me ajudaram durante minha carreira.\
 \
 \
 *That's all folks.*
