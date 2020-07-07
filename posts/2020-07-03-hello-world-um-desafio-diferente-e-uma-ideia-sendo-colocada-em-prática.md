@@ -4,6 +4,7 @@ description: Sempre desejei iniciar um blog, mas não me sentia preparado.
   Finalmente coloquei em prática. O que mudou?
 date: 2020-07-03T07:59:07.000Z
 featuredImage: assets/images/gia-oris-_um5_ng2ssc-unsplash.jpg
+imageCopyright: 'Gia Oris'
 category: carreira
 background: "#8e44ad"
 ---

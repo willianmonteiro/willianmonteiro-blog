@@ -24,7 +24,7 @@ const ArchivePost = props => {
       <ListWrapper>
         {postList.map(({
            node: {
-             frontmatter: { background, featuredImage, category, date, description, title },
+             frontmatter: { background, featuredImage, imageCopyright, category, date, description, title },
              timeToRead,
              fields: { slug }
            },
@@ -33,6 +33,7 @@ const ArchivePost = props => {
             slug={slug}
             background={background}
             featuredImage={featuredImage}
+            imageCopyright={imageCopyright}
             category={category}
             date={date}
             timeToRead={timeToRead}
@@ -71,8 +72,9 @@ export const query = graphql`
               description
               title
               date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
-              background,
+              background
               featuredImage
+              imageCopyright
             }
             timeToRead
           }

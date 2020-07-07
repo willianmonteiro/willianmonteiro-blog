@@ -25,6 +25,7 @@ collections:
         format: 'YYYY-MM-DD hh:mm:ss',
       }
       - { label: 'Imagem', name: 'featuredImage', widget: 'image' }
+      - { label: 'Autor da Imagem', name: 'imageCopyright', widget: 'string' }
       - {
           label: 'Categoria', 
           name: 'category', 

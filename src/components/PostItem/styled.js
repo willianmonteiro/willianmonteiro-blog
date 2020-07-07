@@ -52,6 +52,14 @@ export const PostThumbnail = styled.img`
     `}
 `
 
+export const PostThumbnailCopyright = styled.small`
+    font-size: 10px;
+    background: #fff;
+    margin-top: -14px;
+    margin-left: -2px;
+    padding: 2px 8px;
+`
+
 export const PostItemTag = styled.div`
   background: ${props => props.background || 'var(--highlight)'};
   width: fit-content;

@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Img from 'gatsby-image'
 
 import { 
   PostItemLink, 
   Container, 
-  PostThumbnail, 
+  PostThumbnail,
+  PostThumbnailCopyright,
   PostItemTag,
   PostItemInfo, 
   PostItemDate, 
@@ -13,12 +13,13 @@ import {
   PostItemDescription 
 } from './styled'
 
-const PostItem = ({slug, background, featuredImage, category, date, timeToRead, title, description }) => {
+const PostItem = ({slug, background, featuredImage, imageCopyright, category, date, timeToRead, title, description }) => {
 
   return (
     <PostItemLink to={slug}>
       <Container>
-        <PostThumbnail src={`/${featuredImage}`} />
+        <PostThumbnail src={`/${featuredImage}`} text={`${title} - Photo by ${imageCopyright} on Unsplash`} />
+        <PostThumbnailCopyright>Photo by {imageCopyright} on Unsplash</PostThumbnailCopyright>
         <PostItemInfo>
           <PostItemTag background={background}>{category}</PostItemTag>
           <PostItemDate>{date} • {timeToRead} min de leitura</PostItemDate>
