@@ -17,11 +17,11 @@ const SinglePost = ({ data, pageContext }) => {
       <SEO 
         title={post.frontmatter.title}
         description={post.frontmatter.description}
-        image={post.frontmatter.image}
+        image={post.frontmatter.featuredImage}
       />
       
       <PostHeader>
-        <PostDate>{post.frontmatter.date} - {post.timeToRead}min de leitura</PostDate>
+        <PostDate>{post.frontmatter.date} - {post.timeToRead} min de leitura</PostDate>
         <PostTitle>{post.frontmatter.title}</PostTitle>
         <PostDescription>{post.frontmatter.description}</PostDescription>
       </PostHeader>
