@@ -64,6 +64,10 @@ export const PostThumbnailCopyright = styled.small`
       bottom: 2.5rem;
       border-radius: 15px;
       margin-left: 0;
+      
+      ${media.lessThan('medium')`
+        display: none;
+      `}
     }
 `
 
