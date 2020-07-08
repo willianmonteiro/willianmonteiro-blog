@@ -2,27 +2,32 @@ import React, { useEffect, useState } from 'react'
 
 import { Container, MenuBarGroup, MenuBarItem, MenuBarLink } from './styled'
 import { Home } from '@styled-icons/typicons/Home'
-import { SearchAlt2 as Search } from '@styled-icons/boxicons-regular/SearchAlt2'
 import { UpArrowAlt as Arrow } from '@styled-icons/boxicons-regular/UpArrowAlt'
-import { LightBulb as Light } from '@styled-icons/entypo/LightBulb'
-import { Grid } from '@styled-icons/boxicons-solid/Grid'
+
+import { Moon } from '@styled-icons/boxicons-regular/Moon'
+import { Sun } from '@styled-icons/heroicons-outline/Sun'
+
 import { ThList as List } from '@styled-icons/typicons/ThList'
+import { GridAlt as Grid } from '@styled-icons/boxicons-solid/GridAlt'
+import { SearchAlt2 as Search } from '@styled-icons/boxicons-regular/SearchAlt2'
 
 const MenuBar = () => {
   const [theme, setTheme] = useState(null)
   const [display, setDisplay] = useState(null)
-  
+
   const isDarkMode = theme === 'dark'
-  const isListMode = theme === 'list'
-  
+  const isListMode = display === 'list'
+  const path = typeof window !== 'undefined' && window && window.location ? window.location.pathname : ''
+
   useEffect(() => {
     setTheme(window.__theme)
     setDisplay(window.__display)
-    
-    
+
     window.__onThemeChange = () => setTheme(window.__theme)
-    window.__onDisplayChange = () => setTheme(window.__display)
+    window.__onDisplayChange = () => setDisplay(window.__display)
   }, [])
+  
+  const scrollToTop = () => typeof window !== 'undefined' && window && window.scrollTo({top: 0, behavior: 'smooth'});
   
   return (
     <Container>
@@ -48,18 +53,23 @@ const MenuBar = () => {
           }}
           className={theme}
         >
-          <Light />
+          {isDarkMode ? <Sun /> : <Moon/>}
         </MenuBarItem>
-        <MenuBarItem
-          title='Mudar visualização'
-          onClick={() => {
-            window.__setPreferredDisplay(isListMode ? 'grid' : 'list')
-          }}
-          className={display}
+        {(path && (path === '/' || path === '/search' || path.includes('/page/'))) && (
+          <MenuBarItem
+            title='Mudar visualização'
+            onClick={() => {
+              window.__setPreferredDisplay(isListMode ? 'grid' : 'list')
+            }}
+            className={display}
+          >
+            {isListMode ? <Grid /> : <List/>}
+          </MenuBarItem>
+        )}
+        <MenuBarItem 
+          title='go-to-top'
+          onClick={scrollToTop}
         >
-          {isListMode ? <Grid /> : <List />}
-        </MenuBarItem>
-        <MenuBarItem title='go-to-top'>
           <Arrow/>
         </MenuBarItem>
       </MenuBarGroup>
