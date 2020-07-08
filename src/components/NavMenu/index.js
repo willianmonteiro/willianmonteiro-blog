@@ -7,6 +7,7 @@ import { Sun } from '@styled-icons/heroicons-outline/Sun'
 import { ThList as List } from '@styled-icons/typicons/ThList'
 import { GridAlt as Grid } from '@styled-icons/boxicons-solid/GridAlt'
 import { SearchAlt2 as Search } from '@styled-icons/boxicons-regular/SearchAlt2'
+import { Home } from "@styled-icons/typicons/Home"
 
 const NavMenu = () => {
   const [theme, setTheme] = useState(null)
@@ -27,13 +28,19 @@ const NavMenu = () => {
     return (
       <Container>
         <NavMenuGroup>
+
+          <NavMenuLink to='/' title='Home'>
+            <NavMenuItem>
+              <Home />
+            </NavMenuItem>
+          </NavMenuLink>
           
           <NavMenuLink to='/search' title='Search'>
             <NavMenuItem>
               <Search />
             </NavMenuItem>
           </NavMenuLink>
-
+            
           <NavMenuItem
             title='Mudar o tema'
             onClick={() => {
