@@ -11,13 +11,13 @@ const SinglePost = ({ data, pageContext }) => {
   const post = data.markdownRemark
   const nextPost = pageContext.nextPost
   const previousPost = pageContext.previousPost
-  
+  console.log('post.frontmatter.featuredImage', post.frontmatter.featuredImage);
   return (
     <Layout>
       <SEO 
         title={post.frontmatter.title}
         description={post.frontmatter.description}
-        image={post.frontmatter.featuredImage}
+        image={`/${post.frontmatter.featuredImage}`}
       />
       
       <PostHeader>
