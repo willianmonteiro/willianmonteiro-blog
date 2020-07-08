@@ -2,19 +2,18 @@ import styled from 'styled-components'
 import media from 'styled-media-query'
 import { Link } from 'gatsby';
 
-
 export const PostItemLink = styled(Link)`
   color: var(--texts);
   display: flex;
   text-decoration: none;
   
-  body#grid & {
-    background-color: var(--background);
-  }
-  
-  &:hover {
-    color: var(--highlight);
-  }
+    body#grid & {
+      background-color: var(--background);
+    }
+    
+    &:hover {
+      color: var(--highlight);
+    }
 `;
 
 export const Container = styled.section`
@@ -24,20 +23,21 @@ export const Container = styled.section`
   flex-direction: row;
   padding: 2rem 3rem;
   width: 100%;
+  position: relative;
   
-  body#grid & {
-    border: none;
-    padding: 2rem 1rem;
-    flex-direction: column;
-  }
+    body#grid & {
+      border: none;
+      padding: 2rem 1rem;
+      flex-direction: column;
+    }
 `;
 
 export const PostThumbnail = styled.img`
-    max-width: 200px;
-    max-height: 100px;
-    object-fit: cover;
-    margin-right: 20px;
-    border-radius: 8px;
+  max-width: 200px;
+  max-height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 8px;
 
     body#grid & {
       max-width: 100%;
@@ -53,11 +53,18 @@ export const PostThumbnail = styled.img`
 `
 
 export const PostThumbnailCopyright = styled.small`
-    font-size: 10px;
-    background: #fff;
-    margin-top: -14px;
-    margin-left: -2px;
-    padding: 2px 8px;
+  font-size: 10px;
+  background: #fff;
+  margin-top: -14px;
+  margin-left: -2px;
+  padding: 2px 8px;
+  
+    body#list & { 
+      position: absolute;
+      bottom: 2.5rem;
+      border-radius: 15px;
+      margin-left: 0;
+    }
 `
 
 export const PostItemTag = styled.div`
@@ -75,8 +82,6 @@ export const PostItemTag = styled.div`
   font-size: .6rem;
   font-weight: 600;
   text-transform: uppercase;
-
-
 `;
 
 export const PostItemInfo = styled.div`
@@ -98,6 +103,7 @@ export const PostItemDate = styled.div`
   font-size: 0.9rem;
   opacity: .7
 `;
+
 export const PostItemTitle = styled.h1`
   font-size: 1.4rem;
   font-weight: 500;

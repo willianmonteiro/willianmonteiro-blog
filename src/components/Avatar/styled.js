@@ -8,9 +8,9 @@ export const AvatarWrapper = styled(Img)`
   margin: auto;
   width: 3.2rem;
   
-  ${media.lessThan('medium')`
-    height: 50px;
-    width: 50px;
-    margin-right: 15px;
-  `}
+    ${media.lessThan('medium')`
+      height: 50px;
+      width: 50px;
+      margin-right: 15px;
+    `}
 `

@@ -14,27 +14,26 @@ export const Container = styled.aside`
   position: fixed;
   right: 0;
   width: 3.75rem;
-  
   transition: background 0.5s;
   
-  ${media.lessThan('large')`
-    border-top: 1px solid var(--borders);
-    bottom: 0;
-    flex-direction: row;
-    height: auto;
-    padding: 0;
-    position: fixed;
-    width: 100%;
-  `}
+    ${media.lessThan('medium')`
+      border-top: 1px solid var(--borders);
+      bottom: 0;
+      flex-direction: row;
+      height: auto;
+      padding: 0;
+      position: fixed;
+      width: 100%;
+    `}
 `;
 
 export const MenuBarGroup = styled.div`
   display: flex;
   flex-direction: column;
   
-  ${media.lessThan('large')`
-    flex-direction: row;
-  `}
+    ${media.lessThan('medium')`
+      flex-direction: row;
+    `}
 `;
 
 
@@ -46,36 +45,24 @@ export const MenuBarItem = styled.span`
   padding: 1.1rem;
   position: relative;
   width: 3.75rem;
-  
-  &.light {
-    color: #d4d400;
-    &:hover {
-      color: #e2e240;
+ 
+    &.light {
+      color: #d4d400;
+      &:hover {
+        color: #e2e240;
+      }
     }
-  }
-  
-  &:hover {
-    color: var(--highlight);
-  }
-  
-  &.display {
-    ${media.lessThan('large')`
-      display: none;
-    `}
-  }
-  
-  ${media.greaterThan('large')`
+    
     &:hover {
       color: var(--highlight);
     }
-  `}
-  
-  ${media.lessThan('large')`
-    height: 3.2rem;
-    padding: .9rem;
-    position: relative;
-    width: 3.2rem;
-  `}
+    
+    ${media.lessThan('medium')`
+      height: 3.2rem;
+      padding: .9rem;
+      position: relative;
+      width: 3.2rem;
+    `}
 `
 
 export const MenuBarLink = styled(AniLink)`
