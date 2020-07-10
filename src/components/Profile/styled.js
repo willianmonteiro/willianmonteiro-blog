@@ -47,6 +47,16 @@ export const Author = styled(AniLink)`
     ${media.lessThan('large')`
       font-size: 1rem;
     `}
+    
+    ${media.lessThan('medium')`
+       width: 100%;
+       text-align: center;
+       background: #f0f0f3;
+       display: flex;
+       justify-content: center;
+       padding: 10px;
+       margin-bottom: 15px;
+    `}
 `
 
 export const Description = styled.p`
