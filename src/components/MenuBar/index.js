@@ -69,6 +69,7 @@ const MenuBar = () => {
           <MenuBarItem
             title='go-to-top'
             onClick={scrollToTop}
+            className='scrollToTop'
           >
             <Arrow/>
           </MenuBarItem>

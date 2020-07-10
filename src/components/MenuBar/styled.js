@@ -30,6 +30,13 @@ export const MenuBarItem = styled.span`
   padding: 1.1rem;
   position: relative;
   width: 3.75rem; 
+  
+  ${media.greaterThan('medium')`
+      &.scrollToTop {
+        display: none;
+      }
+  `}
+  
 `
 
 export const MenuBarLink = styled(AniLink)`
