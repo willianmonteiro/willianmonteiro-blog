@@ -2,40 +2,25 @@ import styled from 'styled-components'
 import media from 'styled-media-query'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
-export const Container = styled.aside`
-  align-items: center;
-  background: var(--mediumBackground);
-  border-left: 1px solid var(--borders);
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  justify-content: space-between;
-  padding: 0.8rem 0;
-  position: fixed;
-  right: 0;
-  width: 3.75rem;
-  transition: background 0.5s;
+export const Container = styled.div`
+  margin-bottom: 5px;
   
-    ${media.lessThan('medium')`
-      border-top: 1px solid var(--borders);
-      bottom: 0;
-      flex-direction: row;
-      height: auto;
-      padding: 0;
-      position: fixed;
-      width: 100%;
-    `}
-`;
-
+  ${media.lessThan('medium')`
+    background: var(--mediumBackground);
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 0;
+    width: 100%;
+    z-index: 9999;
+  `}
+`
 export const MenuBarGroup = styled.div`
   display: flex;
-  flex-direction: column;
   
     ${media.lessThan('medium')`
-      flex-direction: row;
+      justify-content: space-between;
     `}
-`;
-
+`
 
 export const MenuBarItem = styled.span`
   color: var(--texts);
@@ -44,25 +29,7 @@ export const MenuBarItem = styled.span`
   height: 3.75rem;
   padding: 1.1rem;
   position: relative;
-  width: 3.75rem;
- 
-    &.light {
-      color: #d4d400;
-      &:hover {
-        color: #e2e240;
-      }
-    }
-    
-    &:hover {
-      color: var(--highlight);
-    }
-    
-    ${media.lessThan('medium')`
-      height: 3.2rem;
-      padding: .9rem;
-      position: relative;
-      width: 3.2rem;
-    `}
+  width: 3.75rem; 
 `
 
 export const MenuBarLink = styled(AniLink)`
