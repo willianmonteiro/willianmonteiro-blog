@@ -1,12 +1,12 @@
 import React from 'react'
 import { Container } from './styled'
 import Profile from '../Profile'
-import NavMenu from '../NavMenu'
+import MenuBar from '../MenuBar'
 
 const Header = () => (
   <Container>
     <Profile />
-    <NavMenu />
+    <MenuBar />
   </Container>
 )
 
