@@ -5,10 +5,11 @@ import { Home } from '@styled-icons/typicons/Home'
 import { Moon } from '@styled-icons/boxicons-regular/Moon'
 import { Sun } from '@styled-icons/heroicons-outline/Sun'
 
-import { ThList as List } from '@styled-icons/typicons/ThList'
-import { GridAlt as Grid } from '@styled-icons/boxicons-solid/GridAlt'
 import { SearchAlt2 as Search } from '@styled-icons/boxicons-regular/SearchAlt2'
 import { UpArrowAlt as Arrow } from '@styled-icons/boxicons-regular/UpArrowAlt'
+import { ThList as List } from '@styled-icons/typicons/ThList'
+import { GridAlt as Grid } from '@styled-icons/boxicons-solid/GridAlt'
+
 
 const MenuBar = () => {
   const [theme, setTheme] = useState(null)
