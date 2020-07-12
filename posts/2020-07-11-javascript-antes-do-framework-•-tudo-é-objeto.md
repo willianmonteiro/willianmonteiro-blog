@@ -24,7 +24,7 @@ Por isso, farei uma série de posts que será um resumão ou um apanhado geral s
 
 Um objeto é uma coleção de dados e/ou funcionalidades relacionadas.
 
-Como acontece com muitas coisas em JavaScript, a criação de um objeto geralmente começa com a definição e a inicialização de uma variável. Então vamos criar nosso primeiro objeto:
+Como acontece com muitas coisas em JavaScript, a criação de um objeto geralmente começa com a definição e a inicialização de uma variável. Então vamos criar nosso:
 
 ```javascript
 const pessoa = {}
