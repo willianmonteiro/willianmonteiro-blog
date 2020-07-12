@@ -20,36 +20,38 @@ E não há nada de errado em aprender um framework, existe muita coisa legal por
 
 Por isso, farei uma série de posts que será um resumão ou um apanhado geral sobre esses conceitos. O primeiro deles que me ajudou não só com React, mas no começo quando estava estudando JavaScript foi encarar TUDO como objeto.
 
- 
-
-## Objeto, noções básicas 
+## Objeto, noções básicas
 
 Um objeto é uma coleção de dados e/ou funcionalidades relacionadas.
 
-Como acontece com muitas coisas em JavaScript, a criação de um objeto geralmente começa com a definição e a inicialização de uma variável. Então vamos criar nosso primeiro objeto:\
-\
-`const pessoa = {}`
+Como acontece com muitas coisas em JavaScript, a criação de um objeto geralmente começa com a definição e a inicialização de uma variável. Então vamos criar nosso primeiro objeto:
 
-Const menu = { 	class: ‘’.principal”,
-	ativar() { 
+```
+const pessoa = {}
+```
+
+Pronto! Diferente do mundo real em JavaScript nós podemos tratar uma pessoa como objeto :emoji: e aqui esta nosso primeiro.
+
+
+
+
+
+Const menu = { 	class: ‘’.principal”, 	ativar() { 
 		// faz algo
 	} }
 
-const pessoa = { 	nome: ‘Willian’,
-	idade: 21,
+const pessoa = { 	nome: ‘Willian’, 	idade: 21,
 	ficarMaisVelho() { 
 		this.idade++
 		console.log(‘’Ficou mais velho.”)
 	}
 }
 
-Em um objeto javascript eu posso criar propriedades e métodos. Propriedade é como se fosse uma variável que vai ter algum valor qualquer
-Métodos são simplesmente funções
+Em um objeto javascript eu posso criar propriedades e métodos. Propriedade é como se fosse uma variável que vai ter algum valor qualquer Métodos são simplesmente funções
 
 Quando eu entendi que praticamente 99% do tempo eu estou utilizando objetos com propriedades e métodos em JavaScript, foi quando eu realmente comecei a aprender a linguagem.
 
-pessoa pessoa.nome
-pessoa.idade
+pessoa pessoa.nome pessoa.idade
 pessoa.ficarMaisVelho()
 
 A gente conseguiu ver como a gente cria um objeto e como acessa suas propriedades e métodos. Se pararmos para analisar, dentro do método ficar mais velho após incrementar a idade nós exibimos a mensagem ‘Ficou mais velho’ e para isso usamos um objeto. Como sabemos disso? Perceba o uso do ponto, temos um console.log, ou seja acessamos/ativamos o método log do objeto console.
