@@ -26,48 +26,77 @@ Um objeto é uma coleção de dados e/ou funcionalidades relacionadas.
 
 Como acontece com muitas coisas em JavaScript, a criação de um objeto geralmente começa com a definição e a inicialização de uma variável. Então vamos criar nosso primeiro objeto:
 
-```
+```javascript
 const pessoa = {}
 ```
 
 Pronto! Diferente do mundo real, no código nós podemos tratar uma pessoa como objeto 😅  e aqui esta nosso primeiro.
 
-
-
 ## Propriedades e Métodos
-
-Quando eu entendi que praticamente 99% do tempo eu estou utilizando objetos com propriedades e métodos em JavaScript, foi quando eu realmente comecei a aprender a linguagem.
 
 Propriedades são variáveis que terá algum valor qualquer e Métodos são simplesmente funções. Vamos atualizar nosso objeto para o código abaixo:
 
-```
+```javascript
 const pessoa = { 	
-    nome: ‘Willian’, 	
+    nome: 'Willian', 	
     idade: 21,
 	ficarMaisVelho() { 
 		this.idade++
-		console.log(‘’Ficou mais velho.”)
+		console.log('Agora eu tenho ' + this.idade + ' anos.')
+	},
+    dizerOi() { 
+		console.log('Olá! Eu sou ' + this.nome + '.')
 	}
 }
 ```
 
+Depois de salvar e atualizar, tente inserir alguns dos itens a seguir no console JavaScript no *devtools* do seu navegador:
 
+```javascript
+// temos aqui as propridades
+pessoa.nome
+// < Willian
 
-pessoa pessoa.nome pessoa.idade
+pessoa.idade
+// < 21
+```
+
+```javascript
+// temos aqui os métodos, que como sabemos, nada mais são do que funções, 
+// então podemos executá-los adicionando parentêses ()
+
 pessoa.ficarMaisVelho()
+// < Agora eu tenho 22 anos.
 
-A gente conseguiu ver como a gente cria um objeto e como acessa suas propriedades e métodos. Se pararmos para analisar, dentro do método ficar mais velho após incrementar a idade nós exibimos a mensagem ‘Ficou mais velho’ e para isso usamos um objeto. Como sabemos disso? Perceba o uso do ponto, temos um console.log, ou seja acessamos/ativamos o método log do objeto console.
+pessoa.dizerOi
+// < Olá! Eu sou o Willian.
+```
 
-Podemos pensar que tudo é objeto tanto que se você for no console do seu navegador e digitar até uma string* e um ponto verá várias propriedades e métodos que poderá acessar.
+Agora temos alguns dados e funcionalidades dentro de nosso objeto e como vimos podemos acessá-los com uma sintaxe simples!
 
-“Willian”.length - total de caracteres dentro dela
+Se pararmos para analisar, dentro do método **ficarMaisVelho** após incrementar a idade nós exibimos a mensagem ‘Ficou mais velho’ e para isso **usamos um objeto**. Como sabemos disso? Perceba o uso do ponto, temos um `console.log`, ou seja acessamos/ativamos o método **log** do objeto console. 🤯
 
-“Willian”.toUpperCase você percebe que é uma função, portanto um método que podemos executar: > “Willian”.toUpperCase() < “WILLIAN”
+![via GIPHY](https://media.giphy.com/media/msriR5ybSpQgo/source.gif)
 
-Um array: \[1, 2, 3].
+\
+Quando eu entendi que praticamente 99% do tempo eu estou utilizando objetos com propriedades e métodos em JavaScript, foi quando eu realmente comecei a aprender a linguagem. Podemos pensar que tudo é objeto tanto que se você for no console do *devtools* em seu navegador e digitar até uma string* e um ponto verá várias propriedades e métodos que poderá acessar.
 
- Em javascript tudo pode ser considerar objeto que com exceção de undefined e null vamos acessar propriedades e métodos utilizando o .(ponto), até mesmo false. 
+*\*String, assim como Number, é um tipo primitivo porém não deixa de ser um objeto criado a partir do seu construtor  new String().*
 
-undefined e null não terão propriedades, métodos
+![](assets/images/string-devtools.png)
 
-\*String, assim como Number, é um tipo primitivo porém não deixa de ser um objeto criado a partir do seu construtor  new String().
+```javascript
+// total de caracteres da string
+'Willian'.length
+// < 7
+
+// toUpperCase você percebe que é uma função, 
+// portanto um método que podemos executar: “Willian”.toUpperCase()
+'Willian'.toUpperCase()
+
+// < 'WILLIAN'
+```
+
+Resumindo, em javascript tudo pode se considerar objeto que com exceção de `undefined` e `null` sempre vamos acessar propriedades e métodos utilizando o .(ponto). 
+
+Faça o teste você mesmo, e se você tentar com um array? Comenta aqui embaixo.
