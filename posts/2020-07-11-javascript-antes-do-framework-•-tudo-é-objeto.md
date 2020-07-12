@@ -50,7 +50,10 @@ const pessoa = {
 }
 ```
 
-Depois de salvar e atualizar, tente inserir alguns dos itens a seguir no console JavaScript no *devtools* do seu navegador:
+\
+*Você deve estar se perguntando o que é o "this". A palavra-chave `this` se refere ao objeto atual em que o código está sendo escrito — nesse caso o `this` se refere a `pessoa`. Mas falaremos com mais detalhes sobre em um outro post.*
+
+Continuando com o nosso objeto, depois de salvar e atualizar, tente inserir alguns dos itens a seguir no console JavaScript no *devtools* do seu navegador:
 
 ```javascript
 // temos aqui as propridades
@@ -73,6 +76,8 @@ pessoa.dizerOi
 ```
 
 Agora temos alguns dados e funcionalidades dentro de nosso objeto e como vimos podemos acessá-los com uma sintaxe simples!
+
+## Notação de ponto
 
 Se pararmos para analisar, dentro do método **ficarMaisVelho** após incrementar a idade nós exibimos a mensagem ‘Ficou mais velho’ e para isso **usamos um objeto**. Como sabemos disso? Perceba o uso do ponto, temos um `console.log`, ou seja acessamos/ativamos o método **log** do objeto console. 🤯
 
