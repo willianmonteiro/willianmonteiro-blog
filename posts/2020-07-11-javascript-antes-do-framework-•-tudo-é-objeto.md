@@ -30,26 +30,28 @@ Como acontece com muitas coisas em JavaScript, a criação de um objeto geralmen
 const pessoa = {}
 ```
 
-Pronto! Diferente do mundo real em JavaScript nós podemos tratar uma pessoa como objeto :emoji: e aqui esta nosso primeiro.
+Pronto! Diferente do mundo real, no código nós podemos tratar uma pessoa como objeto 😅  e aqui esta nosso primeiro.
 
 
 
+## Propriedades e Métodos
 
+Quando eu entendi que praticamente 99% do tempo eu estou utilizando objetos com propriedades e métodos em JavaScript, foi quando eu realmente comecei a aprender a linguagem.
 
-Const menu = { 	class: ‘’.principal”, 	ativar() { 
-		// faz algo
-	} }
+Propriedades são variáveis que terá algum valor qualquer e Métodos são simplesmente funções. Vamos atualizar nosso objeto para o código abaixo:
 
-const pessoa = { 	nome: ‘Willian’, 	idade: 21,
+```
+const pessoa = { 	
+    nome: ‘Willian’, 	
+    idade: 21,
 	ficarMaisVelho() { 
 		this.idade++
 		console.log(‘’Ficou mais velho.”)
 	}
 }
+```
 
-Em um objeto javascript eu posso criar propriedades e métodos. Propriedade é como se fosse uma variável que vai ter algum valor qualquer Métodos são simplesmente funções
 
-Quando eu entendi que praticamente 99% do tempo eu estou utilizando objetos com propriedades e métodos em JavaScript, foi quando eu realmente comecei a aprender a linguagem.
 
 pessoa pessoa.nome pessoa.idade
 pessoa.ficarMaisVelho()
