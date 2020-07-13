@@ -38,7 +38,7 @@ Pronto! Diferente do mundo real, no código nós podemos tratar uma pessoa como 
 
 ## Propriedades e Métodos
 
-Propriedades são variáveis que terá algum valor qualquer e Métodos são simplesmente funções. Vamos atualizar nosso objeto para o código abaixo:
+Propriedades são como variáveis que terão algum valor qualquer e Métodos são simplesmente funções. Vamos atualizar nosso objeto para o código abaixo:
 
 ```javascript
 const pessoa = { 	
@@ -56,7 +56,7 @@ const pessoa = {
 
 *Você deve estar se perguntando o que é o "this". A palavra-chave `this` se refere ao objeto atual em que o código está sendo escrito — nesse caso o `this` se refere a `pessoa`. Mas falaremos com mais detalhes sobre em um outro post.*
 
-Continuando com o nosso objeto, depois de salvar e atualizar, tente inserir alguns dos itens a seguir no console JavaScript no *devtools* do seu navegador:
+Continuando com o nosso objeto, depois de salvar e atualizar, tente inserir alguns dos itens a seguir no console do *devtools* em seu navegador:
 
 ```javascript
 // temos aqui as propridades
@@ -86,7 +86,7 @@ Se pararmos para analisar, dentro do método **ficarMaisVelho** após incrementa
 
 ![via GIPHY](https://media.giphy.com/media/msriR5ybSpQgo/source.gif)
 
-Quando eu entendi que praticamente 99% do tempo eu estou utilizando objetos com propriedades e métodos em JavaScript, foi quando eu realmente comecei a aprender a linguagem. Podemos pensar que tudo é objeto tanto que se você for no console do *devtools* em seu navegador e digitar até uma string* e um ponto verá várias propriedades e métodos que poderá acessar.
+Quando eu entendi que praticamente 99% do tempo eu estou utilizando objetos com propriedades e métodos em JavaScript, foi quando eu realmente comecei a aprender a linguagem. Podemos pensar que tudo é objeto tanto que se você for no console do *devtools* em seu navegador e digitar até uma String* e um ponto verá várias propriedades e métodos que poderá acessar.
 
 *&ast;String, assim como Number, é um tipo primitivo porém não deixa de ser um objeto criado a partir do seu construtor  new String().*
 
@@ -104,6 +104,6 @@ Quando eu entendi que praticamente 99% do tempo eu estou utilizando objetos com 
 // < 'WILLIAN'
 ```
 
-Resumindo, em javascript tudo pode se considerar objeto que com exceção de `undefined` e `null` terá propriedades e métodos que poderemos acessar utilizando o .(ponto). 
+Resumindo, em JavaScript tudo pode se considerar objeto que com exceção de `undefined` e `null` terá propriedades e métodos que poderemos acessar utilizando o .(ponto). 
 
 Faça o teste você mesmo, e se tentarmos com um array? Comenta aqui embaixo.
