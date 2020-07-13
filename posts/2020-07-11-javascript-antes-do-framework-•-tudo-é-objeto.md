@@ -89,7 +89,7 @@ Se pararmos para analisar, dentro do método **ficarMaisVelho** após incrementa
 
 Quando eu entendi que praticamente 99% do tempo eu estou utilizando objetos com propriedades e métodos em JavaScript, foi quando eu realmente comecei a aprender a linguagem. Podemos pensar que tudo é objeto tanto que se você for no console do *devtools* em seu navegador e digitar até uma string* e um ponto verá várias propriedades e métodos que poderá acessar.
 
-*\*String, assim como Number, é um tipo primitivo porém não deixa de ser um objeto criado a partir do seu construtor  new String().*
+*\*\*String, assim como Number, é um tipo primitivo porém não deixa de ser um objeto criado a partir do seu construtor  new String().*
 
 ![](/assets/images/string-devtools.png)
 
@@ -105,6 +105,6 @@ Quando eu entendi que praticamente 99% do tempo eu estou utilizando objetos com 
 // < 'WILLIAN'
 ```
 
-Resumindo, em javascript tudo pode se considerar objeto que com exceção de `undefined` e `null` sempre vamos acessar propriedades e métodos utilizando o .(ponto). 
+Resumindo, em javascript tudo pode se considerar objeto que com exceção de `undefined` e `null` terá propriedades e métodos que poderemos acessar utilizando o .(ponto). 
 
 Faça o teste você mesmo, e se tentarmos com um array? Comenta aqui embaixo.
