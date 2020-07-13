@@ -8,6 +8,11 @@ imageCopyright: "@bretkavanaugh"
 category: javascript
 background: "#F0DB4F"
 ---
+
+Neste post, falaremos sobre porque aprender conceitos da linguagem antes de partir para um framework e veremos a sintaxe fundamental de objetos, revisando alguns recursos JavaScript reiterando o fato de que muitos dos recursos que você já utiliza são objetos.
+
+## On Demand
+
 Quando trabalhamos com desenvolvimento, não raro, aprendemos as coisas sob demanda. O que quero dizer com isso?
 
 Bem, você entende a lógica e os conceitos, que é o principal e quando surge algum problema que você ainda não sabe resolver, então você pesquisa sobre esse caso específico. Isso funciona muito bem para mim.
