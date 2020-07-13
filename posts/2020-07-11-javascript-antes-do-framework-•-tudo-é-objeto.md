@@ -107,4 +107,4 @@ Quando eu entendi que praticamente 99% do tempo eu estou utilizando objetos com 
 
 Resumindo, em javascript tudo pode se considerar objeto que com exceção de `undefined` e `null` sempre vamos acessar propriedades e métodos utilizando o .(ponto). 
 
-Faça o teste você mesmo, e se você tentar com um array? Comenta aqui embaixo.
+Faça o teste você mesmo, e se tentarmos com um array? Comenta aqui embaixo.
