@@ -8,11 +8,15 @@ imageCopyright: "@bretkavanaugh"
 category: javascript
 background: "#F0DB4F"
 ---
+Neste post, introduzimos uma série, onde falaremos sobre porque aprender conceitos da linguagem antes de partir para um framework. Para começar veremos a sintaxe fundamental de objetos, revisando alguns recursos JavaScript reiterando o fato de que muitos dos recursos que você já utiliza são objetos.
+
+## On Demand
+
 Quando trabalhamos com desenvolvimento, não raro, aprendemos as coisas sob demanda. O que quero dizer com isso?
 
 Bem, você entende a lógica e os conceitos, que é o principal e quando surge algum problema que você ainda não sabe resolver, então você pesquisa sobre esse caso específico. Isso funciona muito bem para mim.
 
-Mas para que isso funcione é importante saber a lógica do que você está fazendo. Até para saber onde e como procurar uma solução.
+Mas para que isso funcione é importante saber a lógica do que você está fazendo, **para saber onde e como procurar uma solução**.
 
 Quando você começa a aprender uma tecnologia como JavaScript que a todo momento surge algo novo, talvez você se sinta sempre atrasado e pressionado a pular direto para o framework da moda e não os fundamentos da linguagem. 
 
@@ -103,4 +107,4 @@ Quando eu entendi que praticamente 99% do tempo eu estou utilizando objetos com 
 
 Resumindo, em javascript tudo pode se considerar objeto que com exceção de `undefined` e `null` sempre vamos acessar propriedades e métodos utilizando o .(ponto). 
 
-Faça o teste você mesmo, e se você tentar com um array? Comenta aqui embaixo.
+Faça o teste você mesmo, e se tentarmos com um array? Comenta aqui embaixo.
