@@ -74,7 +74,7 @@ pessoa.idade
 pessoa.ficarMaisVelho()
 // < Agora eu tenho 22 anos.
 
-pessoa.dizerOi
+pessoa.dizerOi()
 // < Olá! Eu sou o Willian.
 ```
 
@@ -98,7 +98,7 @@ Quando eu entendi que praticamente 99% do tempo eu estou utilizando objetos com 
 // < 7
 
 // toUpperCase você percebe que é uma função, 
-// portanto um método que podemos executar: “Willian”.toUpperCase()
+// portanto um método que podemos executar:
 'Willian'.toUpperCase()
 
 // < 'WILLIAN'
