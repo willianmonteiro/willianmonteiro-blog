@@ -34,7 +34,7 @@ const SinglePost = ({ data, pageContext }) => {
           <h4>Encontrou algum problema no texto? Me ajude a corrigir! 😁</h4>
           <p>
             Esse projeto é open source, então basta alterar o arquivo de texto, 
-            <a href='https://github.com/willianmonteiro/pwa-react-graphQL'>
+            <a href='https://github.com/willianmonteiro/willianmonteiro-blog'>
             &nbsp;diretamente no Github&nbsp;
             </a>
             e abrir um pull-request. É uma maneira simples e 
