@@ -11,7 +11,7 @@ background: "#F0DB4F"
 
 > *verbo*
 >
-> 1. 1. *transitivo direto e pronominal*
+> 1. *transitivo direto e pronominal*
 >
 >    desfazer a estrutura, a sustentação a (alguém, algo ou si mesmo); desmanchar(-se), desorganizar(-se).
 
