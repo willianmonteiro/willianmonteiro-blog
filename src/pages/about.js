@@ -8,18 +8,21 @@ const AboutPage = () => (
   <Layout>
     <SEO title="About" />
     <MainContent>
-      <p>Me chamo Willian Monteiro e atualmente trabalho como front-end na <a href="https://nexfar.com.br/" alt='Nexfar'>Nexfar</a>.</p>
+      <p>Me chamo Willian Monteiro e atualmente trabalho como front-end na <a href="https://nexfar.com.br/" alt='Nexfar'>Nexfar</a>.</p> 
+  
       <p>Sou um desenvolvedor que busca criar experiências digitais que integram estratégia, design e tecnologia.</p>
       <p>
-        Gosto de trabalhar em equipe, aprender sobre coisas novas, trocar experiências e
+        Gosto de trabalhar em equipe, aprender sobre coisas novas, trocar experiências e 
         obter diferentes perspectivas do meu trabalho.
       </p>
 
       <p>
-        Antes de ser desenvolvedor, pensei em ser designer, o que me deu uma experiência legal com softwares como
-        Photoshop, Figma e Sketch. Mas acabei seguindo na carreira de programação, inicialmente com PHP;
+        Também sou um entusiasta de design e User Experience e tenho um bom conhecimento com softwares como Photoshop, Figma e Adobe XD.
       </p>
 
+      <p>
+       Comecei minha carreira de programação, inicialmente com PHP;
+      </p>
       <p>
         Possuo experiência em desenvolvimento de temas para Wordpress e desenvolvimento de single page
         applications com JavaScript e frameworks JavaScript (React), module bundlers (webpack),
@@ -29,7 +32,6 @@ const AboutPage = () => (
 
       <p>
         Trabalhei alguns anos com Ecommerce B2C, e atualmente tenho trabalhado em projetos B2B utilizando Javascript.
-        Inclusive sou apaixonado por todas as tecnologias relacionadas ao Javascript, como ReactJS, React Native e NodeJS.
       </p>
       
       <SocialLinks />
