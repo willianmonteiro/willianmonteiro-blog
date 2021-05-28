@@ -17,7 +17,7 @@ background: "#F0DB4F"
 
 Conforme a definição, vamos desfazer a estrutura. No nosso caso de um objeto ou array.
 
-A sintaxe de atribuição via desestruturação (destructuring assignment) é uma expressão JavaScript que possibilita extrair em variáveis distintas dados de arrays ou objetos. Ou seja, em termos mais simples, vamos retirar da estrutura aquilo que precisamos.
+A sintaxe de atribuição via desestruturação (destructuring assignment), é uma expressão JavaScript que possibilita extrair em variáveis distintas dados de arrays ou objetos. Ou seja, em termos mais simples, vamos retirar da estrutura aquilo que precisamos.
 
 **Na prática**
 
@@ -108,7 +108,7 @@ Nesse caso, apesar de estarmos desestruturando a propriedade `surname` estamos c
 
 **Nomes dinâmicos**
 
-Outra funcionalidade muito útil é que podemos extrair para variáveis propriedades com um nome dinâmico (útil para casos em que a propriedade/nome é conhecido no tempo de execução ou vem de outra variável):
+Outra funcionalidade muito útil, é que podemos extrair para variáveis, propriedades com um nome dinâmico (útil para casos em que a propriedade/nome é conhecido no tempo de execução ou vem de outra variável):
 
 ```javascript
 const user = {
@@ -131,7 +131,9 @@ const { [role]: capabilities } = roles;
 capabilities // > ['read']
 ```
 
-Nesse exemplo utilizamos a variável `role` que tinha em seu valor `member`. Quando desestruturamos o objeto `roles` utilizando a variável entre colchetes: `[role]` estamos indicando que queremos utilizar o **valor** dela. Seria equivalente a isso:
+Nesse exemplo utilizamos a variável `role` que continha o valor `member`. \
+\
+Quando desestruturamos o objeto `roles` utilizando a variável entre colchetes: `[role]`, estamos indicando que queremos utilizar o **valor** dela (`member`) como nome de propriedade. Seria equivalente a isso:
 
 ```javascript
 const { member } = roles;
@@ -195,6 +197,6 @@ const { prop1: { prop2: { prop3: { ... } } } } = object;
 \
 **Finalmentes**
 
-Pudemos ver que a desestruturação é um recurso poderoso que nos permite extrair propriedades de um objeto e vincular esses valores a variáveis.
+Pudemos ver que, a desestruturação é um recurso poderoso que nos permite extrair propriedades de um objeto e vincular esses valores a variáveis.
 
 Particularmente gosto muito da desestruturação de objetos, acho a sintaxe mais limpa e curto a capacidade de extrair inúmeras variáveis em uma única instrução. Mas como citei no inicio do post, também é possível desestruturar Arrays, porém estes ficam para um próximo post. 😜
