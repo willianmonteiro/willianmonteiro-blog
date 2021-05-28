@@ -152,7 +152,7 @@ No exemplo acima `name` é o nome da propriedade a ser acessada e a variável `r
 
 **Objetos aninhados**
 
-Nos exemplos acima, desestruturamos apenas obejtos simples e que continham apenas propriedades de tipos primitivos. Mas que dizer de objetos que contenham outros objetos?
+Nos exemplos acima, desestruturamos apenas objetos simples e que continham apenas propriedades de tipos primitivos. Mas que dizer de objetos que contenham outros objetos?
 
 ```javascript
 const user = {
@@ -166,14 +166,14 @@ const user = {
 };
 
 
-const { address: { city, state, country }} = user;
+const { address: { city, state, country } } = user;
 
 city // > Florianópolis
 state // > Santa Catarina
 country // > Brasil
 ```
 
-`address` é o nome da propriedade que contém o objeto aninhado. Já `city` `state` `country` são os nomes das propriedades que queremos extrair desse objeto aninhado.
+`address` é o nome da propriedade que contém o objeto aninhado. Já `city`, `state` e `country` são os nomes das propriedades que queremos extrair desse objeto aninhado.
 
 E assim como podemos ter objetos dentro de outros ilimitadamente, assim também o nível de aninhamento do qual podemos extrair propriedades é ilimitado. Basta adicionar mais colchetes aninhados, mas tente não exagerar 😅😅.
 
@@ -186,4 +186,4 @@ const { prop1: { prop2: { prop3: { ... } } } } = object;
 
 Pudemos ver que a desestruturação é um recurso poderoso que nos permite extrair propriedades de um objeto e vincular esses valores a variáveis.
 
-Particularmente gosto muito da desestruturação de objetos, acho a sintaxe mais limpa e curto a capacidade de extrair várias variáveis em uma única instrução. Mas como citei no inicio do post, também é possível desestruturar Arrays, porém estes ficam para um próximo post. 😜
+Particularmente gosto muito da desestruturação de objetos, acho a sintaxe mais limpa e curto a capacidade de extrair inúmeras variáveis em uma única instrução. Mas como citei no inicio do post, também é possível desestruturar Arrays, porém estes ficam para um próximo post. 😜
