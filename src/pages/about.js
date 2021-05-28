@@ -33,7 +33,6 @@ const AboutPage = () => (
       <p>
         Trabalhei alguns anos com Ecommerce B2C, e atualmente tenho trabalhado em projetos B2B utilizando Javascript.
       </p>
-      
       <SocialLinks />
     </MainContent>
   </Layout>
