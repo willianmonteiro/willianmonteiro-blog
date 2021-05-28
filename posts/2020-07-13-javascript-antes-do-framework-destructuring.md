@@ -19,13 +19,9 @@ Bem, como podemos ver a definição de desestruturar, vamos desfazer a estrutura
 
 A sintaxe de atribuição via desestruturação (destructuring assignment) é uma expressão JavaScript que possibilita extrair em variáveis distintas dados de arrays ou objetos. Ou seja, em termos mais simples, vamos retirar da estrutura aquilo que precisamos.
 
-
-
 **Na prática**
 
 Imagine que você gostaria de extrair algumas propriedades de um objeto. Em um ambiente Pré-ES6, você precisaria escrever o seguinte código:
-
-
 
 ```javascript
 const user = {
@@ -40,13 +36,9 @@ name;     // > 'John',
 surname;  // > 'Doe'
 ```
 
-
-
-Perceba como as coisas se repetem, atribuímos em uma variável `name` o valor de `user.name` e o valor em `surname `o valor der `user.surname`.
+Perceba como as coisas se repetem, atribuímos em uma variável `name` o valor de `user.name` e em `surname` o valor der `user.surname`.
 
 Nesses casos que a desestruturação faz seu nome. Vamos refatorar o código:
-
-
 
 ```javascript
 const user = {
@@ -90,7 +82,6 @@ role      // > member
 Então, ao desestruturar se existir a propriedade ela usará seu valor, se não atribuirá o valor que definimos como padrão. O código acima, é o equivalente a fazermos isso:
 
 ```javascript
-
 const defaultUserRole = 'member';
 const role = user.role === undefined ? defaultUserRole : user.role;
 ```
@@ -111,7 +102,6 @@ const user = {
 const { surname: lastName } = user;
 
 lastName // > Doe
-
 ```
 
 Nesse caso, apesar de estarmos desestruturando a propriedade `surname` estamos chamando ela de `lastName`.
@@ -159,8 +149,6 @@ rest // > { surname: 'Doe', email: 'johndoe@example.com.br' }
 ```
 
 No exemplo acima `name` é o nome da propriedade a ser acessada e a variável `rest` é um objeto simples com as propriedades restantes.
-
-
 
 **Objetos aninhados**
 
