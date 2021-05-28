@@ -131,6 +131,17 @@ const { [role]: capabilities } = roles;
 capabilities // > ['read']
 ```
 
+Nesse exemplo utilizamos a variável `role` que tinha em seu valor `member`. Quando desestruturamos o objeto `roles` utilizando a variável entre colchetes: `[role]` estamos indicando que queremos utilizar o **valor** dela. Seria equivalente a isso:
+
+```javascript
+const { member } = roles;
+member // > ['read']
+
+// ou, utilizando aliasing
+const { member: capabilities } = roles;
+capabilities // > ['read']
+```
+
 **Resto**
 
 Um objeto pode conter muitas propriedades e as vezes queremos apenas algumas específicas, o que fazer com o resto? Podemos utilizar a seguinte sintaxe:
