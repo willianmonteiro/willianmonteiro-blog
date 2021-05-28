@@ -131,7 +131,9 @@ const { [role]: capabilities } = roles;
 capabilities // > ['read']
 ```
 
-Nesse exemplo utilizamos a variável `role` que tinha em seu valor `member`. Quando desestruturamos o objeto `roles` utilizando a variável entre colchetes: `[role]` estamos indicando que queremos utilizar o **valor** dela. Seria equivalente a isso:
+Nesse exemplo utilizamos a variável `role` que continha o valor `member`. \
+\
+Quando desestruturamos o objeto `roles` utilizando a variável entre colchetes: `[role]`, estamos indicando que queremos utilizar o **valor** dela (`member`) como nome de propriedade. Seria equivalente a isso:
 
 ```javascript
 const { member } = roles;
