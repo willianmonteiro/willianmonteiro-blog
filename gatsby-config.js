@@ -6,7 +6,7 @@ module.exports = {
     title: `Willian Monteiro`,
     description: `Desenvolvedor de Software. Crio experiências digitais que unem estratégia, design e tecnologia.`,
     author: `@willianmonteiro`,
-    siteUrl: `https://willianmonteiro.netlify.app/`
+    siteUrl: `https://willianmonteiro.com.br`
   },
   plugins: [
     `gatsby-plugin-sharp`,
