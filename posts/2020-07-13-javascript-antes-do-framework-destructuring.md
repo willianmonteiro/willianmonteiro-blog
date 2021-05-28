@@ -1,5 +1,5 @@
 ---
-title: JavaScript antes do Framework - Destructuring
+title: JavaScript antes do Framework - Destructuring - Objetos
 description: Entenda para que serve e como usar a sintaxe de Atribuição via desestruturação.
 date: 2021-05-27 11:08:52
 featuredImage: assets/images/xavi-cabrera-kn-umdzqdjm-unsplash_min.jpg
