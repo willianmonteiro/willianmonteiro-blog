@@ -53,7 +53,7 @@ surname;  // > 'Doe'
 ```
 
 \
-Agora podemos perceber que extrair os dados dessa maneira nos proporcionando um código mais limpo, sem duplicar nomes de variável e propriedades do objeto.\
+Agora podemos perceber que extrair os dados dessa maneira nos proporciona um código mais limpo, sem duplicar nomes de variáveis e propriedades.\
 \
 **Valores padrão**
 
