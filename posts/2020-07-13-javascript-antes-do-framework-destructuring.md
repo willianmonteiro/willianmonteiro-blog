@@ -115,3 +115,87 @@ lastName // > Doe
 ```
 
 Nesse caso, apesar de estarmos desestruturando a propriedade `surname` estamos chamando ela de `lastName`.
+
+**Nomes dinâmicos**
+
+Outra funcionalidade muito útil é que podemos extrair para variáveis propriedades com um nome dinâmico (útil para casos em que a propriedade/nome é conhecido no tempo de execução ou vem de outra variável):
+
+```javascript
+const user = {
+  name: 'John',
+  role: 'member'
+};
+
+// nesse caso descobrimos a role de dentro do usuário
+// vamos utilizar essa variável como nome de propridade
+const { role } = user;
+
+const roles = {
+  member: ['read'],
+  editor: ['read', 'write']
+}
+
+// estamos desestruturando 'member' de dentro do objeto roles
+const { [role]: capabilities } = roles;
+
+capabilities // > ['read']
+```
+
+**Resto**
+
+Um objeto pode conter muitas propriedades e as vezes queremos apenas algumas específicas, o que fazer com o resto? Podemos utilizar a seguinte sintaxe:
+
+```javascript
+const user = {
+  name: 'John',
+  surname: 'Doe',
+  email: 'johndoe@example.com.br',
+};
+
+const { name, ...rest } = user;
+
+name // > John
+rest // > { surname: 'Doe', email: 'johndoe@example.com.br' }
+```
+
+No exemplo acima `name` é o nome da propriedade a ser acessada e a variável `rest` é um objeto simples com as propriedades restantes.
+
+
+
+**Objetos aninhados**
+
+Nos exemplos acima, desestruturamos apenas obejtos simples e que continham apenas propriedades de tipos primitivos. Mas que dizer de objetos que contenham outros objetos?
+
+```javascript
+const user = {
+  name: 'John',
+  surname: 'Doe',
+  address: {
+    city: 'Florianópolis',
+    state: 'Santa Catarina',
+    country: 'Brasil',
+  }
+};
+
+
+const { address: { city, state, country }} = user;
+
+city // > Florianópolis
+state // > Santa Catarina
+country // > Brasil
+```
+
+`address` é o nome da propriedade que contém o objeto aninhado. Já `city` `state` `country` são os nomes das propriedades que queremos extrair desse objeto aninhado.
+
+E assim como podemos ter objetos dentro de outros ilimitadamente, assim também o nível de aninhamento do qual podemos extrair propriedades é ilimitado. Basta adicionar mais colchetes aninhados, mas tente não exagerar 😅😅.
+
+```javascript
+const { prop1: { prop2: { prop3: { ... } } } } = object;
+```
+
+\
+**Finalmentes**
+
+Pudemos ver que a desestruturação é um recurso poderoso que nos permite extrair propriedades de um objeto e vincular esses valores a variáveis.
+
+Particularmente gosto muito da desestruturação de objetos, acho a sintaxe mais limpa e curto a capacidade de extrair várias variáveis em uma única instrução. Mas como citei no inicio do post, também é possível desestruturar Arrays, porém estes ficam para um próximo post. 😜
