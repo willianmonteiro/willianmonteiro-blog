@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 import SEO from '../components/seo'
 import PostItem from '../components/PostItem'
 import Pagination from '../components/Pagination'
-import { ListWrapper } from "../components/ListWrapper/styled"
+import { ListWrapper } from '../components/ListWrapper/styled'
 
 const ArchivePost = props => {
   const postList = props.data.allMarkdownRemark.edges
