@@ -11,7 +11,7 @@ const SinglePost = ({ data, pageContext }) => {
   const post = data.markdownRemark
   const nextPost = pageContext.nextPost
   const previousPost = pageContext.previousPost
-  console.log('post.frontmatter.featuredImage', post.frontmatter.featuredImage);
+
   return (
     <Layout>
       <SEO 
