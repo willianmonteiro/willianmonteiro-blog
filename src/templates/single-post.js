@@ -21,7 +21,7 @@ const SinglePost = ({ data, pageContext }) => {
       />
       
       <PostHeader>
-        <PostDate>{post.frontmatter.date} - {post.timeToRead} min de leitura</PostDate>
+        <PostDate>{post.timeToRead} min de leitura</PostDate>
         <PostTitle>{post.frontmatter.title}</PostTitle>
         <PostDescription>{post.frontmatter.description}</PostDescription>
       </PostHeader>
