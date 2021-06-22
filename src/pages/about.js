@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
 import { MainContent } from '../components/Post/styled'
-import SocialLinks from "../components/SocialLinks"
+import SocialLinks from '../components/SocialLinks'
 
 const AboutPage = () => (
   <Layout>
