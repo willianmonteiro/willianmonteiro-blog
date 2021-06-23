@@ -22,7 +22,7 @@ const PostItem = ({slug, background, featuredImage, imageCopyright, category, da
         <PostThumbnailCopyright>Photo by {imageCopyright} on Unsplash</PostThumbnailCopyright>
         <PostItemInfo>
           <PostItemTag background={background}>{category}</PostItemTag>
-          <PostItemDate>{date} • {timeToRead} min de leitura</PostItemDate>
+          <PostItemDate>{timeToRead} min de leitura</PostItemDate>
           <PostItemTitle>{title}</PostItemTitle>
           <PostItemDescription>{description}</PostItemDescription>
         </PostItemInfo>
