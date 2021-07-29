@@ -8,7 +8,7 @@ const AboutPage = () => (
   <Layout>
     <SEO title="About" />
     <MainContent>
-      <p>Me chamo Willian Monteiro e atualmente trabalho como front-end na <a href="https://nexfar.com.br/" alt='Nexfar'>Nexfar</a>.</p> 
+      <p>Me chamo Willian Monteiro e atualmente trabalho como front-end na Fractal Engenharia.</p> 
   
       <p>Sou um desenvolvedor que busca criar experiências digitais que integram estratégia, design e tecnologia.</p>
       <p>
