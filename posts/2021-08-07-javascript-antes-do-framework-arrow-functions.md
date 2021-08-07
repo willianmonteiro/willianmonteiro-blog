@@ -49,7 +49,7 @@ const hello = () => {
 }
 ```
 
-Como no segundo exemplo, se a função tiver apenas uma instrução e a instrução retornar um valor, você pode remover as chaves e a palavra-chave return.
+Se a função tiver apenas uma instrução e a instrução retornar um valor, você pode remover as chaves e a palavra return.
 
 ```javascript
 // Função SEM {} e return implícito
