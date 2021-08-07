@@ -30,7 +30,7 @@ const AboutPage = () => (
         arquitetura CSS (BEM, CSS Modules, Styled Components), Git, SEO.
       </p>
 
-      <p>Tenho me aprofundado em arquitetura de software com Clean Architecture e Domain-Driven Design (DDD), testes de Software com Jest e Cypress.<p>
+      <p>Tenho me aprofundado em arquitetura de software com Clean Architecture e Domain-Driven Design (DDD), testes de Software com Jest e Cypress.</p>
       <p>Além disso, busco aplicar em meu dia a dia boas práticas através de Clean Code, Don't Repeat Yourself (DRY), Keep It Simple (KISS) e princípios SOLID.</p>
 
       <p>
