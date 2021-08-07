@@ -38,7 +38,7 @@ const hello = function() {
 hello(); // > Hello World
 ```
 
-E finalmente, chegamos ao tópico da vez que são as Arrows. Uma expressão** *arrow function*** possui uma sintaxe mais curta quando comparada as demais.
+E finalmente, chegamos ao tópico da vez. Uma expressão **A*rrow Function*** possui uma sintaxe mais curta quando comparada as demais.
 
 O que costumar causar um pouco de confusão no começo é que elas podem conter ou não chaves, as vezes precisam do `return` , as vezes não. Para descomplicar de vez, vamos ver alguns exemplos.
 
