@@ -23,7 +23,7 @@ function hello() {
   return 'Hello World';
 }
 
-hello(); // > Hello World
+hello() // > Hello World
 ```
 
 Ou como uma expressão, que nada mais é do que atribuirmos nossa função para uma variável.
@@ -35,7 +35,7 @@ const hello = function() {
   return 'Hello World';
 }
 
-hello(); // > Hello World
+hello() // > Hello World
 ```
 
 E finalmente, chegamos ao tópico da vez. Uma expressão **A*rrow Function*** possui uma sintaxe mais curta quando comparada as demais.
@@ -45,15 +45,19 @@ O que costuma causar um pouco de confusão no começo é que elas podem conter o
 ```javascript
 // Função COM {} e por isso precisamos do return
 const hello = () => {
-  return 'Welcome to JavaScript'
+  return 'Hello World'
 }
+
+hello() // > Hello World
 ```
 
-Como no segundo exemplo, se a função tiver apenas uma instrução e a instrução retornar um valor, você pode remover as chaves e a palavra-chave return.
+Se a função tiver apenas uma instrução e a instrução retornar um valor, você pode remover as chaves e a palavra return.
 
 ```javascript
 // Função SEM {} e return implícito
-const hello = () => 'Welcome to JavaScript'
+const hello = () => 'Hello World'
+
+hello() // > Hello World
 ```
 
 Beleza, agora entendemos as diferentes formas de declarar uma função e a sintaxe de uma Arrow Function. Porém como saber quando usar uma ou outra?
