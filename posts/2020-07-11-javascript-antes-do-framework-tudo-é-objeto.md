@@ -31,7 +31,7 @@ Um objeto é uma coleção de dados e/ou funcionalidades relacionadas.
 Como acontece com muitas coisas em JavaScript, a criação de um objeto geralmente começa com a definição e a inicialização de uma variável. Então vamos criar nosso:
 
 ```javascript
-const pessoa = {}
+const person = {}
 ```
 
 Pronto! Diferente do mundo real, no código nós podemos tratar uma pessoa como objeto 😅  e aqui esta nosso primeiro.
@@ -41,40 +41,40 @@ Pronto! Diferente do mundo real, no código nós podemos tratar uma pessoa como 
 Propriedades são como variáveis que terão algum valor qualquer e Métodos são simplesmente funções. Vamos atualizar nosso objeto para o código abaixo:
 
 ```javascript
-const pessoa = { 	
-    nome: 'Willian', 	
-    idade: 21,
-	ficarMaisVelho() { 
-		this.idade++
-		console.log('Agora eu tenho ' + this.idade + ' anos.')
+const person = { 	
+    name: 'Willian', 	
+    age: 22,
+	getOlder: function () { 
+		this.age++;
+		return 'Agora eu tenho ' + this.age + ' anos.';
 	},
-    dizerOi() { 
-		console.log('Olá! Eu sou ' + this.nome + '.')
+    sayHello: function () { 
+		return 'Olá! Eu sou ' + this.name + '.';
 	}
 }
 ```
 
-*Você deve estar se perguntando o que é o "this". A palavra-chave `this` se refere ao objeto atual em que o código está sendo escrito — nesse caso o `this` se refere a `pessoa`. Mas falaremos com mais detalhes sobre em um outro post.*
+*Você deve estar se perguntando o que é o "this". A palavra-chave `this` se refere ao objeto atual em que o código está sendo escrito — nesse caso o `this` se refere a `person`. Mas falaremos com mais detalhes sobre em um outro post.*
 
 Continuando com o nosso objeto, depois de salvar e atualizar, tente inserir alguns dos itens a seguir no console do *devtools* em seu navegador:
 
 ```javascript
 // temos aqui as propridades
-pessoa.nome
+person.name
 // < Willian
 
-pessoa.idade
-// < 21
+person.age
+// < 22
 ```
 
 ```javascript
 // temos aqui os métodos, que como sabemos, nada mais são do que funções, 
 // então podemos executá-los adicionando parentêses ()
 
-pessoa.ficarMaisVelho()
-// < Agora eu tenho 22 anos.
+pessoa.getOlder()
+// < Agora eu tenho 23 anos.
 
-pessoa.dizerOi()
+pessoa.sayHello()
 // < Olá! Eu sou o Willian.
 ```
 
