@@ -28,7 +28,7 @@ hello(); // > Hello World
 
 Ou como uma expressão, que nada mais é do que atribuirmos nossa função para uma variável.
 
-A principal diferença entre uma expressão de função e a declaração de uma função é o nome da função*,* o qual pode ser omitido em expressões de funções para criar funções anônimas.
+A principal diferença entre uma expressão de função e a declaração de uma função é o nome*,* o qual pode ser omitido em expressões para criar funções anônimas.
 
 ```javascript
 const hello = function() {
