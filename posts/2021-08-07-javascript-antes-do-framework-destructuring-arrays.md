@@ -19,12 +19,10 @@ Conforme a definição, vamos desfazer a estrutura. No nosso caso de um objeto o
 
 A sintaxe de atribuição via desestruturação (destructuring assignment), é uma expressão JavaScript que possibilita extrair em variáveis distintas dados de arrays ou objetos. Ou seja, em termos mais simples, vamos retirar da estrutura aquilo que precisamos.
 
-
-
 **Na prática**\
 Assim como no post de [Desestruturação de Objetos](https://willianmonteiro.com.br/javascript-antes-do-framework-destructuring/), vamos ver como faríamos a desestruturação antes do ES6.
 
-```
+```javascript
 const employee = ['John', 'Doe', 23, 'Software Developer', 'JavaScript', 'Google']
 
 const name = employee[0];
@@ -37,13 +35,9 @@ age; // > 23
 tech; // > JavaScript
 ```
 
-
-
 De cara conseguimos notar que temos de fazer a mesma coisa repetidamente. Para facilitar as coisas, em vez de passarmos por esse processo repetitivo, vamos ver um exemplo da desestruturação em Array.
 
-
-
-```
+```javascript
 const employee = ['John', 'Doe', 23, 'Software Developer', 'JavaScript', 'Google']
 
 const [name, surname] = employee;
@@ -52,15 +46,11 @@ name; // > John
 surname; // > Doe
 ```
 
-
-
 **Ignorando alguns itens**
 
 Nem sempre vamos querer os os itens da matriz em ordem, talvez queiramos obter o primeiro e o último item e para conseguir fazer isso na desestruturação, será necessário ignorar alguns dos itens.
 
-
-
-```
+```javascript
 const employee = ['John', 'Doe', 23, 'Software Developer', 'JavaScript', 'Google']
 
 const [name,,,,,company] = employee;
@@ -68,16 +58,11 @@ const [name,,,,,company] = employee;
 
 name; // > John
 company; // > Google
-
 ```
 
 Que viagem é essa?
 
-![Que Viagem É Essa Véi / Memes Brasileiros / Chateado GIF - WhatsUpWithThat  WaitWhat WhatTheHell - Discover \&amp; Share GIFs](https://media.tenor.com/images/a237870e1762f66156286c9d25950d1b/tenor.gif)
-
 Observe que em vez de ter apenas uma vírgula, tínhamos cinco. O separador de vírgula é usado para pular valores em um array. Portanto, se você quiser pular um item, basta usar uma vírgula.
-
-
 
 **Valores padrão**
 
@@ -87,7 +72,7 @@ E isso poderia nos causar algum problema, visto que assim como no objeto, se no 
 
 A solução também é a mesma do obejeto, bamos a um exemplo de como atribuir valores padrão no caso de array.
 
-```
+```javascript
 const employee = ['John', 'Software Developer']
 
 const [name, position, working = 'remotely'] = employee;
@@ -99,8 +84,6 @@ working; // > remotely
 ```
 
 Portanto, a variável `working` passa a ser "*remotely*" porque não está definido no array.
-
-
 
 **Resto**
 
@@ -115,4 +98,10 @@ name; // > John
 jobData; // > ["Software Developer", "JavaScript", "Google"]
 ```
 
-No exemplo acima `name` é o nome da propriedade a ser acessada e a variável `rest` é um objeto simples com as propriedades restantes.
+Dessa forma, desestruturamos o `name` e guardamos as demais informações na variável `jobData`.
+
+**Conclusão**
+
+Espero que vocês tenham entendido como utilizar e visto as vantagens de se usar atribuição via desestruturação, seja nos Objecto ou Arrays. Essa feature é muito utilizado ao trabalhar com frameworks JavaScript.
+
+E se você quiser saber mais sobre outras features do JavaScript ES6 que são importantes de serem entendidas antes de partir para o framework, fica atento para os próximos posts, onde falarei mais desse assunto!
