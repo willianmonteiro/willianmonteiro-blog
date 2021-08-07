@@ -3,8 +3,8 @@ title: Hello World - Um desafio diferente
 description: Sempre desejei iniciar um blog, mas não me sentia preparado.
   Finalmente coloquei em prática. O que mudou?
 date: 2020-07-03T07:59:07.000Z
-featuredImage: assets/images/gia-oris-_um5_ng2ssc-unsplash_min.jpg
-imageCopyright: Gia Oris
+featuredImage: assets/images/sweetheartshi-k_pbb5wjtau-unsplash.jpg
+imageCopyright: "@sweetheartshi"
 category: carreira
 background: "#8e44ad"
 ---
