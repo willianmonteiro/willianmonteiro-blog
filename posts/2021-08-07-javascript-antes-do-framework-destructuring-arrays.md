@@ -70,7 +70,7 @@ Nem sempre teremos certeza dos valores que vamos encontrar, também é comum aco
 
 E isso poderia nos causar algum problema, visto que assim como no objeto, se no array desestruturado não tiver a propriedade especificada na atribuição de desestruturação, a variável será atribuída com `undefined`.
 
-A solução também é a mesma do obejeto, bamos a um exemplo de como atribuir valores padrão no caso de array.
+A solução também é a mesma do objeto, vamos a um exemplo de como atribuir valores padrão no caso de array.
 
 ```javascript
 const employee = ['John', 'Software Developer']
@@ -102,6 +102,6 @@ Dessa forma, desestruturamos o `name` e guardamos as demais informações na var
 
 **Conclusão**
 
-Espero que vocês tenham entendido como utilizar e visto as vantagens de se usar atribuição via desestruturação, seja nos Objecto ou Arrays. Essa feature é muito utilizado ao trabalhar com frameworks JavaScript.
+Espero que vocês tenham entendido como utilizar e visto as vantagens de se usar atribuição via desestruturação, seja nos Objetos ou Arrays. Essa feature é muito utilizado ao trabalhar com frameworks JavaScript.
 
-E se você quiser saber mais sobre outras features do JavaScript ES6 que são importantes de serem entendidas antes de partir para o framework, fica atento para os próximos posts, onde falarei mais desse assunto!
+E se você quiser saber mais sobre outras features do JavaScript que são importantes de serem entendidas antes de partir para o framework, fica atento para os próximos posts, onde falarei mais desse assunto!
