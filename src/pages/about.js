@@ -21,17 +21,20 @@ const AboutPage = () => (
       </p>
 
       <p>
-       Comecei minha carreira de programação, inicialmente com PHP;
+       Comecei minha carreira de programação inicialmente com PHP, onde pude ter uma boa base de estudos sobre Programação Orientada a Objetos;
       </p>
       <p>
         Possuo experiência em desenvolvimento de temas para Wordpress e desenvolvimento de single page
-        applications com JavaScript e frameworks JavaScript (React), module bundlers (webpack),
+        applications com JavaScript/TypeScript e frameworks JavaScript (React, Angular, Vue), module bundlers (webpack),
         package managers (NPM, Yarn), transpilers (Babel), pre processadores CSS (Sass),
         arquitetura CSS (BEM, CSS Modules, Styled Components), Git, SEO.
       </p>
 
+      <p>Tenho me aprofundado em arquitetura de software com Clean Architecture e Domain-Driven Design (DDD), testes de Software com Jest e Cypress.<p>
+      <p>Além disso, busco aplicar em meu dia a dia boas práticas através de Clean Code, Don't Repeat Yourself (DRY), Keep It Simple (KISS) e princípios SOLID.</p>
+
       <p>
-        Trabalhei alguns anos com Ecommerce B2C, e atualmente tenho trabalhado em projetos B2B utilizando Javascript.
+        Trabalhei muitos anos com Ecommerce B2C/B2B e atualmente trabalho em ferramentas de análise de Segurança de Barragens e situação/previsão de eventos hidrológicos críticos.
       </p>
       <SocialLinks />
     </MainContent>
