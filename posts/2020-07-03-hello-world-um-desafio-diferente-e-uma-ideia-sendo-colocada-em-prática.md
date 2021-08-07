@@ -1,5 +1,5 @@
 ---
-title: Hello World - Um desafio diferente e uma ideia sendo colocada em prática
+title: Hello World - Um desafio diferente
 description: Sempre desejei iniciar um blog, mas não me sentia preparado.
   Finalmente coloquei em prática. O que mudou?
 date: 2020-07-03T07:59:07.000Z
