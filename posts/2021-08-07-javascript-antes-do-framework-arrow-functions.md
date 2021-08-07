@@ -40,14 +40,18 @@ hello(); // > Hello World
 
 E finalmente, chegamos ao tópico da vez. Uma expressão **A*rrow Function*** possui uma sintaxe mais curta quando comparada as demais.
 
-O que costumar causar um pouco de confusão no começo é que elas podem conter ou não chaves, as vezes precisam do `return` , as vezes não. Para descomplicar de vez, vamos ver alguns exemplos.
+O que costuma causar um pouco de confusão no começo é que elas podem conter ou não chaves, as vezes precisam do `return` , as vezes não. Para descomplicar de vez, vamos ver alguns exemplos.
 
 ```javascript
 // Função COM {} e por isso precisamos do return
 const hello = () => {
   return 'Welcome to JavaScript'
 }
+```
 
+Como no segundo exemplo, se a função tiver apenas uma instrução e a instrução retornar um valor, você pode remover as chaves e a palavra-chave return.
+
+```javascript
 // Função SEM {} e return implícito
 const hello = () => 'Welcome to JavaScript'
 ```
