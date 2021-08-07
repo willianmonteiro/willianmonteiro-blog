@@ -16,7 +16,7 @@ Tendo isso em mente, e continuando a série de posts sobre Javascript. Vamos fal
 
 Podemos declarar uma função de diferentes maneiras.
 
-A maneira mais usual é usando a palavra-chave de função:
+A maneira mais usual é com a palavra-chave de função:
 
 ```javascript
 function hello() {
