@@ -12,8 +12,6 @@ Na maioria das vezes, quando alguém sente que a curva de aprendizado de um fram
 
 Tendo isso em mente, e continuando a série de posts sobre Javascript. Vamos falar sobre **Arrow Functions**, outra feature do ES6 que causa um pouco de confusão, principalmente devido a sua sintaxe e suas diferenças em relação as demais maneiras de declarar uma função.
 
-
-
 ## **Sintaxe**
 
 Podemos declarar uma função de diferentes maneiras.
@@ -38,7 +36,6 @@ const hello = function() {
 }
 
 hello(); // > Hello World
-
 ```
 
 E finalmente, chegamos ao tópico da vez que são as Arrows. Uma expressão** *arrow function*** possui uma sintaxe mais curta quando comparada as demais.
@@ -54,3 +51,5 @@ const hello = () => {
 // Função SEM {} e return implícito
 const hello = () => 'Welcome to JavaScript'
 ```
+
+Beleza, agora entendemos as diferentes formas de declarar uma função e a sintaxe de uma Arrow Function. Porém como saber quando usar uma ou outra?
