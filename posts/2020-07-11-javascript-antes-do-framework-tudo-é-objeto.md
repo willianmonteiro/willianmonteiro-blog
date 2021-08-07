@@ -46,10 +46,10 @@ const person = {
     age: 22,
 	getOlder: function () { 
 		this.age++;
-		return 'Agora eu tenho ' + this.age + ' anos.';
+		console.log('Agora eu tenho ' + this.age + ' anos.');
 	},
     sayHello: function () { 
-		return 'Olá! Eu sou ' + this.name + '.';
+		console.log('Olá! Eu sou ' + this.name + '.');
 	}
 }
 ```
@@ -71,10 +71,10 @@ person.age
 // temos aqui os métodos, que como sabemos, nada mais são do que funções, 
 // então podemos executá-los adicionando parentêses ()
 
-pessoa.getOlder()
+person.getOlder()
 // < Agora eu tenho 23 anos.
 
-pessoa.sayHello()
+person.sayHello()
 // < Olá! Eu sou o Willian.
 ```
 
@@ -82,7 +82,7 @@ Agora temos alguns dados e funcionalidades dentro de nosso objeto e como vimos p
 
 ## Notação de ponto
 
-Se pararmos para analisar, dentro do método **ficarMaisVelho** após incrementar a idade nós exibimos a mensagem ‘Ficou mais velho’ e para isso **usamos um objeto**. Como sabemos disso? Perceba o uso do ponto, temos um `console.log`, ou seja acessamos/ativamos o método **log** do objeto console. 🤯
+Se pararmos para analisar, dentro do método **getOlder** após incrementar a idade nós exibimos a mensagem ‘Ficou mais velho’ e para isso **usamos um objeto**. Como sabemos disso? Perceba o uso do ponto, temos um `console.log`, ou seja acessamos/ativamos o método **log** do objeto console. 🤯
 
 ![via GIPHY](https://media.giphy.com/media/msriR5ybSpQgo/source.gif)
 
