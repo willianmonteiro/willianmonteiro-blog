@@ -16,7 +16,7 @@ Tendo isso em mente, e continuando a série de posts sobre Javascript. Vamos fal
 
 Podemos declarar uma função de diferentes maneiras.
 
-A maneira mais usual é usando a palavra-chave de função:
+A maneira mais usual é com a palavra-chave de função:
 
 ```javascript
 function hello() {
@@ -28,7 +28,7 @@ hello(); // > Hello World
 
 Ou como uma expressão, que nada mais é do que atribuirmos nossa função para uma variável.
 
-A principal diferença entre uma expressão de função e a declaração de uma função é o nome da função*,* o qual pode ser omitido em expressões de funções para criar funções anônimas.
+A principal diferença entre uma expressão de função e a declaração de uma função é o nome*,* o qual pode ser omitido em expressões para criar funções anônimas.
 
 ```javascript
 const hello = function() {
@@ -38,16 +38,20 @@ const hello = function() {
 hello(); // > Hello World
 ```
 
-E finalmente, chegamos ao tópico da vez que são as Arrows. Uma expressão** *arrow function*** possui uma sintaxe mais curta quando comparada as demais.
+E finalmente, chegamos ao tópico da vez. Uma expressão **A*rrow Function*** possui uma sintaxe mais curta quando comparada as demais.
 
-O que costumar causar um pouco de confusão no começo é que elas podem conter ou não chaves, as vezes precisam do `return` , as vezes não. Para descomplicar de vez, vamos ver alguns exemplos.
+O que costuma causar um pouco de confusão no começo é que elas podem conter ou não chaves, as vezes precisam do `return` , as vezes não. Para descomplicar de vez, vamos ver alguns exemplos.
 
 ```javascript
 // Função COM {} e por isso precisamos do return
 const hello = () => {
   return 'Welcome to JavaScript'
 }
+```
 
+Como no segundo exemplo, se a função tiver apenas uma instrução e a instrução retornar um valor, você pode remover as chaves e a palavra-chave return.
+
+```javascript
 // Função SEM {} e return implícito
 const hello = () => 'Welcome to JavaScript'
 ```
